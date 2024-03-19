@@ -1,0 +1,6877 @@
+/* all elements */
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+}
+
+ul,
+ol,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p,
+span {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* FONTS STARTS */
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('../fonts/SegoeUI-Regular.woff2') format('woff2'),
+    url('../fonts/SegoeUI-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+    url('../fonts/Montserrat-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+    url('../fonts/Montserrat-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+    url('../fonts/Montserrat-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+    url('../fonts/Montserrat-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('../fonts/RobotoCondensed-Light.woff2') format('woff2'),
+    url('../fonts/RobotoCondensed-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('../fonts/RobotoCondensed-Regular.woff2') format('woff2'),
+    url('../fonts/RobotoCondensed-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* all section padding form left and right */
+.main-padding {
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+
+/* header css */
+
+header {
+  background: #000000;
+  padding-top: 15px;
+}
+
+.header-logo {
+  width: 100%;
+  max-width: 234px;
+}
+
+
+.header-logo a {
+  display: inline-block;
+}
+
+ul#menu {
+  width: 100%;
+  max-width: 675px;
+  justify-content: space-between;
+}
+
+header .navbar-nav li a {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 24px;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+}
+
+header .navbar-nav li {
+  position: relative;
+}
+
+header .navbar-nav li.active {
+  color: #FFFFFF;
+}
+
+header .navbar-nav li.active::after {
+  content: " ";
+  position: absolute;
+  background: #E9204F;
+  width: 32px;
+  height: 2px;
+  border-radius: 2px;
+  bottom: 0;
+  left: 9px;
+}
+
+header .navbar-nav li a:hover {
+  color: aliceblue;
+}
+
+/* .nav-link:focus {
+  border-bottom: 2px solid #E9204F;
+  border-radius: 0 0 2px 2px;
+  color: aliceblue;
+} */
+
+/* header css end*/
+
+/* Home page css */
+/* banner css */
+.banner {
+  background: #000000;
+  color: #FFFFFF;
+  padding-top: 214px; 
+}
+
+.banner-content {
+  width: 100%;
+  max-width: 711px;
+  position: relative;
+  padding-top: 42px;
+}
+
+.banner-content h2 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 100px;
+  line-height: 122px;
+  margin-bottom: 85px;
+}
+
+.banner-content a {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 24px;
+  display: inline-block;
+  padding: 13px 39px;
+  border: 2px solid #E9204F;
+  transition: 0.4s ease-in-out;
+}
+
+.banner-content a:hover {
+  background: #E9204F;
+}
+
+.banner-content::before {
+  content: " ";
+  background: #E9204F;
+  width: 138px;
+  height: 3px;
+  position: absolute;
+  top: 28px;
+  border-radius: 5px;
+}
+
+.banner-image {
+  width: 100%;
+  max-width: 896px;
+  margin-left: 48px;
+  margin-bottom: -14px;
+}
+
+/* banner css end*/
+
+/* about css */
+.about {
+  background: #E9204F;
+  padding-top: 83px;
+  padding-bottom: 89px;
+}
+
+.about-card {
+  background: #000000;
+  padding: 53px 60px 0px 63px;
+  width: 100%;
+  max-width: 510px;
+  min-height: 518px;
+  margin: 0 auto;
+  transition: 0.4s ease-in-out;
+}
+
+.about-card:hover {
+  background: #FFFFFF;
+  color: #E9204F !important;
+}
+
+.about-card:hover h2 {
+  color: #E9204F;
+}
+
+.about-card:hover p {
+  color: #E9204F;
+}
+
+.card-image {
+  width: 100%;
+  max-width: 90px;
+  min-height: 90px;
+}
+
+.about-card h2 {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 28px;
+  line-height: 30px;
+  margin-top: 60px;
+  margin-bottom: 54px;
+  position: relative;
+}
+
+.about-card h2::after {
+  content: " ";
+  position: absolute;
+  background: #FFFFFF;
+  width: 71px;
+  height: 2px;
+  bottom: -17px;
+  left: 0;
+}
+
+.about-card:hover h2::after {
+  background: red !important;
+}
+
+.about-card p {
+  font-family: 'Roboto Condensed';
+  font-weight: 300;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 54px;
+}
+
+/* about css end*/
+
+/* services css */
+.services {
+  background: #000000;
+  padding-top: 168px;
+  padding-bottom: 159px;
+}
+
+.services-row {
+  position: relative;
+}
+
+.services-row::before {
+  content: " ";
+  position: absolute;
+  background: #E9204F;
+  width: 3px;
+  height: 68px;
+  left: 50%;
+  bottom: -123px;
+}
+
+.services-row::after {
+  content: " ";
+  position: absolute;
+  background: #E9204F;
+  width: 3px;
+  height: 68px;
+  left: 50%;
+  top: -123px;
+}
+
+.services-head {
+  width: 100%;
+  max-width: 662px;
+  position: relative;
+  margin-bottom: 42px;
+}
+
+.services-head::before {
+  content: " ";
+  background: #E9204F;
+  position: absolute;
+  width: 122px;
+  height: 2px;
+  top: -28px;
+}
+
+.services-head h2 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 56px;
+  line-height: 68px;
+  margin-top: 60px;
+  margin-bottom: 3px;
+}
+
+.services-head p {
+  font-family: 'Roboto Condensed';
+  font-weight: 300;
+  font-style: normal;
+  color: #E9204F;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.services-card {
+  width: 100%;
+  max-width: 536px;
+  min-height: 102px;
+  padding: 2px 48px;
+  background: #141414;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  transition: 0.4s ease-in-out;
+}
+
+.services-card:hover {
+  background: #E9204F;
+}
+
+.services-card-content {
+  width: 100%;
+  max-width: 176px;
+}
+
+.services-card-content h2 {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 99px;
+}
+
+.services-card-image {
+  width: 100%;
+  max-width: 31px;
+  min-height: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* services css end*/
+
+/* counter css */
+.counter {
+  padding: 65px 0px;
+  background: #141414;
+}
+
+.counter-card {
+  padding: 26px 4px 34px 43px;
+  background-color: #141414;
+  border: 2px solid #FFFFFF;
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.counter-card h2 {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 57px;
+  line-height: 69px;
+  margin-bottom: 9px;
+}
+
+.counter-card p {
+  font-family: 'Roboto Condensed';
+  font-weight: 300;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.counter-row {
+  position: relative;
+}
+
+.counter-row::after {
+  content: " ";
+  position: absolute;
+  background: #E9204F;
+  width: 587px;
+  height: 29px;
+  left: -141px;
+  bottom: -94px;
+}
+
+.counter-row::before {
+  content: " ";
+  position: absolute;
+  background: #E9204F;
+  width: 587px;
+  height: 29px;
+  left: -141px;
+  top: -94px;
+}
+
+/* counter css end*/
+
+/* portfolio css */
+.portfolio {
+  padding-top: 171px;
+  padding-bottom: 161px;
+  background: #000000;
+}
+
+.portfolio-row {
+  position: relative;
+}
+
+.portfolio-row::before {
+  content: " ";
+  position: absolute;
+  background: #E9204F;
+  width: 3px;
+  height: 68px;
+  left: 50%;
+  top: -123px;
+}
+
+.portfolio-row::after {
+  content: " ";
+  position: absolute;
+  background: #E9204F;
+  width: 3px;
+  height: 68px;
+  left: 50%;
+  bottom: -123px;
+}
+
+.portfolio-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio-head {
+  position: relative;
+}
+
+.portfolio-head::before {
+  content: " ";
+  background: #E9204F;
+  position: absolute;
+  width: 122px;
+  height: 2px;
+  top: -28px;
+}
+
+.portfolio-head h2 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 56px;
+  line-height: 68px;
+  margin-bottom: 2px;
+}
+
+.portfolio-head p {
+  font-family: 'Roboto Condensed';
+  font-weight: 300;
+  font-style: normal;
+  color: #E9204F;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 42px;
+}
+
+.portfolio-view a {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 24px;
+  display: inline-block;
+  padding: 11px 38px;
+  border: 2px solid #E9204F;
+  transition: 0.4s ease-in-out;
+}
+
+.portfolio-view a:hover {
+  background-color: #E9204F;
+}
+
+.portfolio-images {
+  width: 100%;
+  max-width: 530px;
+  margin: 0 auto;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+.portfolio-images img {
+  opacity: 0.3;
+  transition: transform .2s ease;
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio-images img:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+.swiper-slide {
+  padding-bottom: 55px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: transparent;
+  font-size: 0px;
+}
+
+.swiper-button-next .fa,
+.swiper-button-prev .fa {
+  color: #FFFFFF;
+  font-size: 20px;
+  transition: 0.3s ease-in-out;
+  width: 17px;
+  height: 12px;
+}
+
+.swiper-button-next {
+  top: 96%;
+  z-index: 12;
+  right: 43%;
+}
+
+.swiper-button-next .fa:hover {
+  color: #E9204F;
+}
+
+.swiper-button-prev {
+  top: 96%;
+  z-index: 12;
+  left: 44%;
+}
+
+.swiper-button-prev .fa:hover {
+  color: #E9204F;
+}
+
+.swiper-pagination-bullet {
+  background: #FFFFFF !important;
+  width: 11px;
+  height: 11px;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #E9204F !important;
+}
+
+/* portfolio css end*/
+/* Home page css end */
+
+
+/* services page css */
+
+/* service page banner css*/
+.seervice {
+  padding-bottom: 110px;
+}
+
+.services-banner {
+  padding-bottom: 78px;
+}
+
+.servives-card {
+  background: #141414;
+}
+
+.services-banner .col-xxl-4 {
+  position: relative;
+  z-index: 2;
+}
+
+.services-banner .col-xxl-4:nth-child(4)::after {
+  position: absolute;
+  content: " ";
+  background: #FFFFFF;
+  width: 489px;
+  height: 287px;
+  top: 259px;
+  z-index: -1;
+  right: -16px;
+}
+
+/* .services-banner .col-xxl-4:nth-child(4)::after {
+  position: absolute;
+  content: " ";
+  background: #FFFFFF;
+  width: 32px;
+  height: 287px;
+  top: 230px;
+  right: -16px;
+} */
+
+/* .services-banner .col-xxl-4:nth-child(4)::before {
+  position: absolute;
+  content: " ";
+  background: #FFFFFF;
+  width: 452px;
+  height: 30px;
+  bottom: -29px;
+  left: 105px;
+} */
+
+.servives-card:hover {
+  background: #E9204F;
+  color: #FFFFFF;
+}
+
+.card-image .fa {
+  font-size: 90px;
+  color: #E9204F;
+}
+
+.servives-card:hover .fa {
+  color: #FFFFFF;
+}
+
+.servives-card:hover h2 {
+  color: #FFFFFF
+}
+
+.servives-card:hover p {
+  color: #FFFFFF;
+}
+
+.servives-card:hover h2::after {
+  background: #FFFFFF !important;
+}
+
+/* service page banner css end*/
+
+/* technologies css*/
+.technologies {
+  background: #000000;
+  padding-bottom: 183px;
+}
+
+.technologies-row {
+  position: relative;
+}
+
+.technologies-row::before {
+  content: " ";
+  position: absolute;
+  background: #E9204F;
+  width: 3px;
+  height: 68px;
+  left: 50%;
+  bottom: -123px;
+}
+
+.technologies-head {
+  width: 100%;
+  max-width: 662px;
+  position: relative;
+  margin-bottom: 42px;
+}
+
+.technologies-head::before {
+  content: " ";
+  background: #E9204F;
+  position: absolute;
+  width: 122px;
+  height: 2px;
+  top: -28px;
+}
+
+.technologies-head h2 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 56px;
+  line-height: 68px;
+  margin-top: 60px;
+  margin-bottom: 3px;
+}
+
+.technologies-head p {
+  font-family: 'Roboto Condensed';
+  font-weight: 300;
+  font-style: normal;
+  color: #E9204F;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.technologies-isotops {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.technologies-isotops-buttons {
+  width: 100%;
+  max-width: 398px;
+  background: #E9204F;
+  padding: 68px 95px 68px 150px;
+  margin-right: 16px;
+}
+
+.technologies-isotops-buttons ul li {
+  margin-bottom: 153px;
+}
+
+.technologies-isotops-buttons ul li:nth-child(3) {
+  margin-bottom: 0px;
+}
+
+.technologies-isotops-buttons ul li a {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.technologies-tab {
+  width: 100%;
+  max-width: 1226px;
+  background: #141414;
+  padding: 29px 116px 29px 60px;
+  margin-bottom: 16px;
+  display: flex;
+  min-height: 171px;
+  align-items: center;
+}
+
+.technologies-tab:nth-child(3) {
+  margin-bottom: 0px;
+}
+
+.technologies-tab-wrapper {
+  width: 100%;
+  max-width: 88px;
+  margin-right: 118px;
+}
+
+.technologies-tab-wrapper:nth-last-child(1) {
+  margin-right: 0px;
+}
+
+.technologies-tab-wrapper img {
+  height: 65px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.technologies-tab-wrapper p {
+  font-family: 'Roboto Condensed';
+  font-weight: 300;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 20px;
+  margin-top: 17px;
+  text-align: center;
+}
+
+/* services page css end*/
+
+/* works page css */
+.work-isotops {
+  padding-top: 5px;
+  padding-bottom: 69px;
+  background: #000000;
+}
+
+.isotope-layouts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.isotops-items {
+  width: 100%;
+  max-width: 536px;
+  background: #141414;
+  padding: 24px 0px;
+  margin-right: 360px;
+  position: relative;
+}
+
+.isotops-items::before {
+  content: " ";
+  width: 30px;
+  height: 267px;
+  left: -29;
+  bottom: 0;
+  background: #E9204F;
+  position: absolute;
+}
+
+.isotops-items::after {
+  content: " ";
+  width: 490px;
+  height: 30px;
+  right: 46px;
+  bottom: -30px;
+  background: #E9204F;
+  position: absolute;
+}
+
+.grid {
+  width: 100%;
+  max-width: 960px;
+}
+
+.element-item {
+  display: flex;
+}
+
+.isotops-items button {
+  padding: 33px 0px 33px 0px;
+  width: 100%;
+  display: block;
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 28px;
+  line-height: 34px;
+  background: transparent;
+  border: none
+}
+
+.isotops-items button:hover {
+  background: #E9204F;
+}
+
+.isotops-images {
+  width: 100%;
+  max-width: 536px;
+  min-height: 500px;
+  margin-right: 63px;
+}
+
+.isotops-images img {
+  opacity: 0.3;
+  transition: 0.3s ease-in-out;
+}
+
+.isotops-images img:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+.isotope-filteration-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.isotops-contents {
+  width: 100%;
+  max-width: 387px;
+  padding: 98px 0px 90px;
+}
+
+.isotops-contents h2 {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 28px;
+  line-height: 30px;
+  margin-bottom: 17px;
+}
+
+.isotops-contents p {
+  font-family: 'Roboto Condensed';
+  font-weight: 300;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 20px 0px 72px;
+}
+
+.isotops-contents a {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 24px;
+  display: inline-block;
+  padding: 11px 38px;
+  border: 2px solid #E9204F;
+  transition: 0.4s ease-in-out;
+}
+
+.isotops-contents a:hover {
+  background: #E9204F;
+}
+
+.isotope-vertical {
+  width: 70px;
+  height: 2px !important;
+  border-radius: 3px;
+  background: #FFFFFF;
+  opacity: 1;
+  margin-top: 0;
+}
+
+/* works page css end*/
+
+/* about-us css */
+.about-us {
+  background: #000000;
+  padding-top: 5px;
+  padding-bottom: 130px;
+}
+
+.about-us-image {
+  width: 100%;
+  max-width: 536px;
+  opacity: 0.5;
+}
+
+.about-us-horizontal {
+  width: 122px;
+  height: 3px !important;
+  border-radius: 3px;
+  background: #E9204F;
+  opacity: 1;
+  margin-top: 0;
+}
+
+.about-us-content {
+  width: 100%;
+  max-width: 812px;
+  padding-top: 22px;
+}
+
+.about-us-content h2 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 56px;
+  line-height: 68px;
+  margin-bottom: 50px;
+}
+
+.about-us-content p {
+  font-family: 'Roboto Condensed';
+  font-weight: 300;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 152px;
+}
+
+.about-us-describtion {
+  display: block;
+  margin-top: 28px;
+}
+
+.about-us-content a {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 24px;
+  display: inline-block;
+  padding: 11px 38px;
+  border: 2px solid #E9204F;
+  transition: 0.4s ease-in-out;
+}
+
+.about-us-content a:hover {
+  background: #E9204F;
+}
+
+/* choose-us css*/
+.choose-us {
+  background: #000000;
+  padding-top: 4px;
+  padding-bottom: 75px;
+}
+
+.choose-us-head h2 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 56px;
+  line-height: 68px;
+  margin-bottom: 48px;
+}
+
+.choose-us-image {
+  width: 100%;
+  max-width: 536px;
+  opacity: 0.3;
+  margin-bottom: 18px;
+}
+
+.Experience {
+  display: none;
+}
+
+.about-card:hover .Experience {
+  display: block;
+}
+
+.about-card:hover .Expertise {
+  display: none;
+}
+
+.chose-us-card {
+  padding: 53px 41px 0px 49px !important;
+}
+
+.testimonials {
+  background: #000000;
+  padding-bottom: 65px;
+}
+
+.about-us-vertical {
+  width: 3px;
+  height: 68px !important;
+  border-radius: 3px;
+  background: #E9204F;
+  opacity: 1;
+  margin: 0 auto;
+  margin-top: 0;
+}
+
+.testimonials-body {
+  padding: 38px 0px 155px 22px;
+  width: 100%;
+  max-width: 1640px;
+  text-align: center;
+  margin: 0 auto;
+  background: #141414;
+  margin-bottom: 68px;
+  position: relative;
+}
+
+
+.testimonials-body::before {
+  content: " ";
+  position: absolute;
+  background: #E9204F;
+  width: 32px;
+  height: 227px;
+  right: 0;
+  bottom: 1px;
+}
+
+.testimonials-body::after {
+  content: " ";
+  position: absolute;
+  background: #E9204F;
+  width: 490px;
+  height: 30px;
+  right: 0;
+  bottom: -29px;
+}
+
+.testimonials-image {
+  width: 100%;
+  max-width: 122px;
+  margin: 0 auto;
+}
+
+.testimonial-describtion {
+  width: 100%;
+  max-width: 774px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonial-describtion ::before {
+  content: url('../img/quote.png');
+  position: absolute;
+  width: 100%;
+  max-width: 169px;
+  height: 20px;
+  top: -96px;
+  left: -282px;
+}
+
+.testimonial-describtion h2 {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 28px;
+  line-height: 30px;
+  margin-top: 25px;
+  margin-bottom: 14px;
+}
+
+.testimonial-describtion h4 {
+  font-family: 'Roboto Condensed';
+  font-weight: 300;
+  font-style: normal;
+  color: #E9204F;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 50px;
+}
+
+.testimonial-describtion p {
+  font-family: 'Roboto Condensed';
+  font-weight: 300;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.testimonial-vertical {
+  margin-top: 45px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 1 !important;
+}
+
+.carousel-indicators .active {
+  width: 13px;
+  height: 13px;
+  background-color: #E9204F;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  position: absolute;
+  top: 0px;
+  bottom: 16px;
+  left: 42%;
+  z-index: 3;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  width: 15%;
+  padding: 8px;
+  color: #fff;
+  text-align: center;
+  opacity: 1;
+  font-size: 17px;
+}
+
+.carousel-control-next {
+  left: 47%;
+}
+
+.carousel-control-next:hover {
+  color: #E9204F;
+}
+
+.carousel-control-prev:hover {
+  color: #E9204F;
+}
+
+.carousel-control-prev {
+  left: 38%
+}
+
+/* about-us css  end*/
+
+/* contact-form css */
+.contact-form {
+  padding-top: 5px;
+  padding-bottom: 157px;
+  background: #000000;
+  background-image: url(../img/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-form-describtions {
+  width: 100%;
+  max-width: 675px;
+}
+
+.contact-form-describtions p {
+  font-family: 'Roboto Condensed';
+  font-weight: 300;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 213px;
+}
+
+.contact-form-help {
+  display: block;
+  margin-top: 26px;
+}
+
+.contact-form-describtions ul li {
+  margin-bottom: 25px;
+}
+
+.contact-form-describtions ul li:nth-child(2) {
+  margin-bottom: 0px;
+}
+
+.contact-form-describtions ul li a {
+  font-family: 'Roboto Condensed';
+  font-weight: 300;
+  font-style: normal;
+  color: #E9204F;
+  font-size: 20px;
+  line-height: 24px;
+  display: inline-block;
+}
+
+.contact-form-describtions ul .fa {
+  font-size: 25px;
+  margin-right: 30px;
+}
+
+.contact-us-form {
+  width: 100%;
+  max-width: 812px;
+}
+
+input {
+  background: transparent;
+  padding: 22px 0px 18px 41px;
+  border: 1px solid #E9204F;
+  color: #808080;
+  width: 100%;
+  margin-bottom: 22px;
+}
+
+.contact-us-form input::placeholder {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-style: normal;
+  color: #808080;
+  font-size: 18px;
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea {
+  background: transparent;
+  padding: 22px 0px 18px 41px;
+  border: 1px solid #E9204F;
+  width: 100%;
+  resize: none;
+  color: #808080;
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+textarea::placeholder {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-style: normal;
+  color: #808080;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.submit {
+  margin-top: 70px;
+  padding: 13px 56px;
+  background: #E9204F;
+  border: none;
+  color: #FFFFFF;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  transition: 0.3s ease-in-out;
+}
+
+.submit:hover {
+  background: #FFFFFF;
+  color: #E9204F;
+}
+
+/* contact-form css end/
+
+
+/* footer css */
+footer {
+  padding-top: 205px;
+  padding-bottom: 81px;
+  background: #E9204F;
+}
+
+.footer-row {
+  position: relative;
+}
+
+.footer-row::before {
+  content: " ";
+  position: absolute;
+  background: #FFFFFF;
+  width: 3px;
+  height: 68px;
+  left: 50%;
+  top: -143px;
+}
+
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 212px;
+}
+
+.footer-content {
+  width: 100%;
+  max-width: 316px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.footer-content h2 {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 56px;
+  line-height: 68px;
+  border: 2px solid transparent;
+  transition: 0.4s ease-in-out;
+  text-align: center;
+}
+
+.footer-content h2:hover {
+  border-bottom: 3px solid #FFFFFF;
+}
+
+.footer-Enquire {
+  text-align: end;
+}
+
+.footer-Enquire a {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 24px;
+  display: inline-block;
+  padding: 11px 38px;
+  border: 2px solid #FFFFFF;
+  transition: 0.4s ease-in-out;
+}
+
+.footer-Enquire a:hover {
+  background: #FFFFFF;
+  color: #E9204F;
+}
+
+.footer-copy-write {
+  text-align: center;
+  margin-top: 90px;
+}
+
+.footer-copy-write a {
+  font-family: 'Roboto Condensed';
+  font-weight: 300;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+
+/* footer css end*/
+
+/* All media screen  */
+
+/* Extra large devices (large laptops and desktops, 1800px and up) */
+@media only screen and (max-width: 1800px) {
+
+  /* home media css */
+  .banner-image {
+    margin-left: 89px;
+  }
+
+  .counter-row::before {
+    width: 537px;
+    height: 29px;
+    left: -88px;
+  }
+
+  .counter-row::after {
+    width: 537px;
+    height: 29px;
+    left: -88px;
+  }
+
+  /* home media css */
+
+  /* services media css */
+  .services-banner .col-xxl-4:nth-child(4)::before {
+    bottom: -29px;
+    left: 69px;
+  }
+
+  .services-banner .col-xxl-4:nth-child(4)::after {
+    top: 230px;
+    right: -20px;
+  }
+
+  .technologies-tab-wrapper {
+    margin-right: 98px;
+  }
+
+  .grid {
+    max-width: 941px;
+  }
+
+  .isotops-items {
+    padding: 20px 0px;
+  }
+
+  .isotops-items button {
+    padding: 28px 0px 28px 0px;
+  }
+
+  .servives-card {
+    font-size: 26px;
+    padding: 53px 24px 0px 30px;
+    min-height: 488px;
+  }
+
+  .servives-card p {
+    font-size: 19px;
+  }
+
+  /* services media css */
+}
+
+/* Extra large devices (large laptops and desktops, 1680px and up) */
+@media only screen and (max-width: 1680px) {
+
+  /* home media css */
+  .banner-content h2 {
+    font-size: 88px;
+    line-height: 113px;
+    margin-bottom: 66px;
+  }
+
+  .banner-image {
+    max-width: 746px;
+    margin-left: 98px;
+    margin-bottom: -12px;
+  }
+
+  .about-card h2 {
+    font-size: 25px;
+    line-height: 29px;
+    margin-top: 60px;
+    margin-bottom: 54px;
+  }
+
+  .counter-row::before {
+    width: 498px;
+    height: 27px;
+    left: -35px;
+    top: -92px;
+  }
+
+
+  .counter-row::after {
+    width: 498px;
+    height: 27px;
+    left: -35px;
+    bottom: -93px;
+  }
+
+  .portfolio-images {
+    min-height: 363px;
+  }
+
+  /* home media css end*/
+
+  /* services media css */
+  .services-banner .col-xxl-4:nth-child(4)::after {
+    top: 209px;
+    right: -22px;
+    width: 30px;
+    height: 278px;
+  }
+
+  .services-banner .col-xxl-4:nth-child(4)::before {
+    bottom: -27px;
+    left: 67px;
+    width: 422px;
+    height: 28px;
+  }
+
+  .technologies-isotops-buttons {
+    max-width: 390px;
+    padding: 61px 91px 61px 141px;
+    margin-right: 14px;
+  }
+
+  .technologies-tab {
+    max-width: 1171px;
+    padding: 27px 110px 26px 51px;
+    margin-bottom: 15px;
+    min-height: 170px;
+  }
+
+  .technologies-tab-wrapper {
+    margin-right: 84px;
+  }
+
+  .technologies-tab-wrapper img {
+    height: 60px;
+  }
+
+  /* services media css end*/
+
+  /* work media css */
+  .isotops-items {
+    max-width: 520px;
+    padding: 24px 0px;
+    margin-right: 345px;
+  }
+
+  .grid {
+    max-width: 820px;
+  }
+
+  .isotops-contents {
+    max-width: 334px;
+    padding: 84px 0px 90px;
+  }
+
+  .isotops-images {
+    max-width: 536px;
+    min-height: 380px;
+    margin-right: 21px;
+  }
+
+  .isotops-items button {
+    padding: 25px 0px 25px 0px;
+  }
+
+  .isotops-items::before {
+    width: 27px;
+    height: 230px;
+    left: -27px;
+  }
+
+  .isotops-items::after {
+    width: 453px;
+    height: 27px;
+    right: 94px;
+    bottom: -27px;
+  }
+
+  .isotops-contents h2 {
+    font-size: 26px;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
+
+  .isotops-contents p {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 19px 0px 59px;
+  }
+
+  .isotops-contents a {
+    font-size: 19px;
+    line-height: 24px;
+    padding: 10px 32px;
+  }
+
+  /* work media css end*/
+
+  /* about media css */
+  .about-us-content p {
+    margin-bottom: 131px;
+  }
+
+  .chose-us-card {
+    padding: 49px 20px 0px 27px;
+    min-height: 448px;
+  }
+
+  .chose-us-card p {
+    font-size: 16px;
+    margin-bottom: 17px;
+  }
+
+  .testimonials-body::before {
+    width: 27px;
+    height: 202px;
+    right: 1px;
+  }
+
+  .testimonials-body::after {
+    width: 454px;
+    height: 27px;
+    right: 1px;
+    bottom: -26px;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+  }
+
+  .contact-form-describtions {
+    max-width: 633px;
+  }
+
+  /* about media css end*/
+}
+
+/* Extra large devices (large laptops and desktops, 1600px and up) */
+@media only screen and (max-width: 1600px) {
+
+  /* home media css */
+  .main-padding {
+    padding-left: 133px;
+    padding-right: 133px;
+  }
+
+  .banner-content h2 {
+    font-size: 75px;
+    line-height: 96px;
+    margin-bottom: 48px;
+  }
+
+  .banner-image {
+    max-width: 709px;
+    margin-left: 84px;
+    margin-bottom: -12px;
+  }
+
+  .about-card h2 {
+    font-size: 23px;
+    line-height: 29px;
+    margin-top: 60px;
+    margin-bottom: 54px;
+  }
+
+  .counter-row::before {
+    width: 448px;
+    height: 24px;
+    left: -2px;
+    top: -91px;
+  }
+
+  .counter-row::after {
+    width: 448px;
+    height: 24px;
+    left: -2px;
+    bottom: -91px;
+  }
+
+  .portfolio-images {
+    min-height: 423px;
+  }
+
+  .swiper-button-prev {
+    top: 95%;
+    z-index: 12;
+    left: 44%;
+  }
+
+
+  .swiper-button-next {
+    top: 95%;
+    z-index: 12;
+    right: 43%;
+  }
+
+  /* home media css end*/
+
+  /* services media css */
+  .card-image .fa {
+    font-size: 85px;
+    color: #E9204F;
+  }
+
+  .services-banner .col-xxl-4:nth-child(4)::after {
+    top: 169px;
+    right: -22px;
+    width: 30px;
+    height: 278px;
+  }
+
+  .services-banner .col-xxl-4:nth-child(4)::before {
+    bottom: -27px;
+    left: 45px;
+    width: 422px;
+    height: 28px;
+  }
+
+  .technologies-tab-wrapper {
+    margin-right: 76px;
+  }
+
+  .technologies-tab {
+    max-width: 1226px;
+    padding: 26px 131px 25px 51px;
+    margin-bottom: 15px;
+    min-height: 167px;
+  }
+
+  .technologies-tab-wrapper img {
+    height: 52px;
+  }
+
+  .technologies-tab-wrapper p {
+    font-size: 18px;
+    margin-top: 13px;
+  }
+
+  /* services media css end*/
+  /* works media css */
+  .isotops-items button {
+    font-size: 26px;
+    line-height: 31px;
+    padding: 23px 0px 22px 0px;
+  }
+
+  .isotops-items {
+    max-width: 441px;
+    padding: 23px 0px;
+    margin-right: 262px;
+  }
+
+  .grid {
+    max-width: 787px;
+    margin: 0 auto;
+  }
+
+  .isotops-items::before {
+    width: 25px;
+    height: 219px;
+    left: -27px;
+    bottom: -1px;
+  }
+
+  .isotops-items::after {
+    width: 347px;
+    height: 24px;
+    right: 121px;
+    bottom: -25px;
+  }
+
+  .isotops-images {
+    max-width: 405px;
+    min-height: 303px;
+    margin-right: 41px;
+  }
+
+  .isotops-contents {
+    max-width: 334px;
+    padding: 50px 0px 90px;
+  }
+
+  .isotops-contents a {
+    font-size: 18px;
+    line-height: 23px;
+    padding: 9px 24px;
+  }
+
+  /* works media css end*/
+
+  /* about media css */
+  .about-us-image {
+    max-width: 490px;
+  }
+
+  .about-us-horizontal {
+    margin-bottom: 8px;
+  }
+
+  .about-us-content h2 {
+    font-size: 54px;
+    line-height: 64px;
+    margin-bottom: 40px;
+  }
+
+  .about-us-content p {
+    margin-bottom: 81px;
+  }
+
+  .chose-us-card {
+    padding: 33px 17px 0px 23px !important;
+    min-height: 378px !important;
+  }
+
+  .chose-us-card .card-image {
+    max-width: 85px;
+    min-height: 85px;
+  }
+
+  .chose-us-card p {
+    font-size: 16px !important;
+    margin-bottom: 0px !important;
+  }
+
+  .choose-us-head h2 {
+    margin-bottom: 40px;
+  }
+
+  .testimonial-describtion ::before {
+    width: 89%;
+    max-width: 144px;
+    height: 10px;
+    top: -96px;
+    left: -209px;
+  }
+
+  .testimonials-body {
+    padding: 38px 0px 112px 22px;
+    max-width: 1640px;
+    margin-bottom: 59px;
+  }
+
+  .testimonials-body::before {
+    width: 24px;
+    height: 181px;
+    right: 0px;
+  }
+
+  .testimonials-body::after {
+    width: 307px;
+    height: 24px;
+    right: 0px;
+    bottom: -23px;
+  }
+
+  /* about media css end*/
+
+  /* contact media css */
+  .contact-form-describtions {
+    max-width: 590px;
+  }
+
+  .contact-form-describtions p {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 175px;
+  }
+
+  /* contact media css end*/
+}
+
+/* Extra large devices (large laptops and desktops, 1500px and up) */
+@media only screen and (max-width: 1500px) {
+
+  /* home media css */
+  .main-padding {
+    padding-left: 124px;
+    padding-right: 124px;
+  }
+
+  ul#menu {
+    max-width: 661px;
+  }
+
+  .banner-image {
+    max-width: 700px;
+    margin-left: 52px;
+    margin-bottom: -11px;
+  }
+
+  .banner-content a {
+    padding: 12px 32px;
+  }
+
+  .about-card {
+    padding: 49px 47px 0px 54px;
+    min-height: 516px;
+    transition: 0.4s ease-in-out;
+  }
+
+  .services {
+    padding-top: 157px;
+    padding-bottom: 152px;
+  }
+
+  .services-row::after {
+    top: -110px;
+  }
+
+  .services-row::before {
+    bottom: -105px;
+  }
+
+  .counter {
+    padding: 50px 0px;
+  }
+
+  .counter-row::after {
+    width: 416px;
+    height: 18px;
+    left: 34px;
+    bottom: -68px;
+  }
+
+  .counter-row::before {
+    width: 416px;
+    height: 18px;
+    left: 34px;
+    top: -68px;
+  }
+
+  .services-head h2 {
+    font-size: 53px;
+    line-height: 66px;
+    margin-top: 42px;
+    margin-bottom: 3px;
+  }
+
+  .services-card {
+    padding: 2px 34px;
+  }
+
+  .portfolio-head h2 {
+    font-size: 53px;
+    line-height: 66px;
+    margin-bottom: 2px;
+  }
+
+  .portfolio-images {
+    min-height: 318px;
+  }
+
+  .swiper-pagination-bullet {
+    background: #FFFFFF !important;
+    width: 10px;
+    height: 10px;
+  }
+
+  .swiper-button-next {
+    top: 94%;
+    z-index: 12;
+    right: 42%;
+  }
+
+  .swiper-button-prev {
+    top: 94%;
+    z-index: 12;
+    left: 43%;
+  }
+
+  footer {
+    padding-top: 190px;
+    padding-bottom: 60px;
+  }
+
+  /* home media css end*/
+  /* services media css */
+
+  .services-banner {
+    padding-bottom: 50px;
+  }
+
+  .about-card {
+    padding: 48px 36px 0px 40px;
+  }
+
+  .card-image .fa {
+    font-size: 82px;
+  }
+
+  .about-card h2 {
+    margin-top: 50px;
+  }
+
+  .services-banner .col-xxl-4:nth-child(4)::after {
+    top: 283px;
+    right: -14px;
+    width: 26px;
+    height: 232px;
+  }
+
+  .services-banner .col-xxl-4:nth-child(4)::before {
+    bottom: -25px;
+    left: 85px;
+    width: 346px;
+    height: 26px;
+  }
+
+  .services-card-image {
+    max-width: 29px;
+  }
+
+  .technologies-head h2 {
+    font-size: 54px;
+    line-height: 66px;
+    margin-top: 58px;
+  }
+
+  .technologies-isotops-buttons ul li {
+    margin-bottom: 134px;
+  }
+
+  .technologies-isotops-buttons {
+    max-width: 370px;
+    padding: 46px 81px 46px 119px;
+    margin-right: 11px;
+  }
+
+  .technologies-tab {
+    max-width: 1191px;
+    padding: 20px 133px 20px 45px;
+    margin-bottom: 15px;
+    min-height: 150px;
+  }
+
+  .technologies-tab-wrapper {
+    margin-right: 67px;
+    max-width: 86px;
+  }
+
+  .technologies-tab-wrapper img {
+    height: 48px;
+  }
+
+  /* services media css end*/
+
+  /* work media css */
+
+  .work-isotops {
+    padding-bottom: 65px;
+  }
+
+  .isotops-items {
+    max-width: 424px;
+    padding: 24px 0px;
+    margin-right: 260px;
+  }
+
+  .isotops-items button {
+    font-size: 25px;
+    line-height: 28px;
+    padding: 22px 0px 22px 0px;
+  }
+
+  .isotops-items::before {
+    width: 24px;
+    height: 204px;
+    left: -24px;
+    bottom: 0px;
+  }
+
+  .isotops-items::after {
+    width: 325px;
+    height: 24px;
+    right: 123px;
+    bottom: -23px;
+  }
+
+  /* work media css end*/
+
+  /* about meedia css */
+  .about-us-image {
+    max-width: 467px;
+  }
+
+  .about-us-content h2 {
+    font-size: 52px;
+    line-height: 60px;
+    margin-bottom: 36px;
+  }
+
+  .about-us-horizontal {
+    margin-bottom: 7px;
+  }
+
+  .about-us-content p {
+    margin-bottom: 67px;
+  }
+
+  .choose-us-head h2 {
+    margin-bottom: 39px;
+    font-size: 53px;
+    line-height: 64px;
+  }
+
+  .chose-us-card {
+    padding: 33px 17px 0px 23px !important;
+    min-height: 430px !important;
+  }
+
+  .chose-us-card .card-image {
+    max-width: 82px;
+    min-height: 80px;
+  }
+
+  .chose-us-card h2 {
+    margin-top: 42px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .choose-us-image img {
+    height: 429px;
+  }
+
+  .testimonials {
+    padding-bottom: 54px;
+  }
+
+  .testimonials-body {
+    padding: 38px 0px 95px 23px;
+    margin-bottom: 53px;
+  }
+
+  .testimonials-body::before {
+    width: 24px;
+    height: 167px;
+    right: 0px;
+  }
+
+  .testimonials-body::after {
+    width: 294px;
+    height: 24px;
+    right: 0px;
+    bottom: -23px;
+  }
+
+  /* about meedia css end*/
+
+  /* contact media css */
+  .contact-form-describtions {
+    max-width: 544px;
+  }
+
+  /* contact media css end*/
+}
+
+/* Extra large devices (large laptops and desktops, 1440px and up) */
+@media only screen and (max-width: 1440px) {
+  .main-padding {
+    padding-left: 112px;
+    padding-right: 112px;
+  }
+
+  /* home media css */
+  .banner{
+    padding-top: 152px;
+  }
+  .banner-image {
+    max-width: 603px;
+    margin-left: 64px;
+    margin-bottom: -9px;
+  }
+
+  .banner-content::before {
+    width: 112px;
+    height: 3px;
+    top: 30px;
+  }
+
+  .banner-content h2 {
+    font-size: 65px;
+    line-height: 90px;
+    margin-bottom: 44px;
+  }
+
+  .about {
+    padding-top: 74px;
+    padding-bottom: 70px;
+  }
+  .about-card {
+    min-height: 491px;
+}
+  .card-image {
+    width: 100%;
+    max-width: 82px;
+    min-height: 82px;
+  }
+  .about-card h2 {
+    margin-top: 35px;
+}
+  .services {
+    padding-top: 147px;
+    padding-bottom: 147px;
+  }
+
+  .services-head h2 {
+    font-size: 48px;
+    line-height: 61px;
+    margin-top: 42px;
+    margin-bottom: 4px;
+  }
+
+  .services-head::before {
+    width: 114px;
+    top: -19px;
+  }
+
+  .services-card {
+    padding: 2px 33px;
+  }
+
+  .services-card-content h2 {
+    font-size: 19px;
+    line-height: 87px;
+  }
+
+  .services-card-image {
+    max-width: 27px;
+  }
+
+  .counter {
+    padding: 34px 0px;
+  }
+
+  .counter-card {
+    padding: 23px 4px 33px 42px;
+    max-width: 255px;
+  }
+
+  .counter-card h2 {
+    font-size: 49px;
+    line-height: 66px;
+  }
+
+  .counter-row::before {
+    width: 347px;
+    height: 15px;
+    left: 85px;
+    top: -47px;
+  }
+
+  .counter-row::after {
+    width: 347px;
+    height: 15px;
+    left: 85px;
+    bottom: -47px;
+  }
+
+  .portfolio-head h2 {
+    font-size: 48px;
+    line-height: 61px;
+  }
+
+  .portfolio-head::before {
+    width: 114px;
+    top: -19px;
+  }
+
+  .services {
+    padding-top: 135px;
+    padding-bottom: 95px;
+  }
+
+  /* home media css end*/
+
+  /* services media css */
+  .services-banner {
+    padding-bottom: 34px;
+  }
+
+  .services-banner .col-xxl-4:nth-child(4)::after {
+    top: 286px;
+    right: -12px;
+    width: 24px;
+    height: 229px;
+  }
+
+  .services-banner .col-xxl-4:nth-child(4)::before {
+    bottom: -23px;
+    left: 95px;
+    width: 322px;
+    height: 24px;
+  }
+
+  .services {
+    padding-top: 135px;
+    padding-bottom: 95px;
+  }
+
+  .technologies {
+    padding-bottom: 177px;
+  }
+
+  .technologies-head::before {
+    width: 114px;
+    top: -19px;
+  }
+
+  .technologies-head h2 {
+    font-size: 48px;
+    line-height: 61px;
+    margin-top: 50px;
+  }
+
+  .technologies-isotops-buttons {
+    max-width: 345px;
+    padding: 39px 73px 39px 109px;
+    margin-right: 8px;
+  }
+
+  .technologies-tab {
+    max-width: 881px;
+    padding: 20px 125px 20px 45px;
+    margin-bottom: 15px;
+    min-height: 147px;
+  }
+
+  .technologies-tab-wrapper img {
+    height: 45px;
+  }
+
+  .technologies-tab-wrapper p {
+    font-size: 17px;
+    margin-top: 12px;
+  }
+
+  /* services media css end*/
+
+  /* works media css */
+  .work-isotops {
+    padding-bottom: 50px;
+  }
+
+  .isotops-items {
+    max-width: 371px;
+    padding: 22px 0px;
+    margin-right: 200px;
+  }
+
+  .isotops-items::before {
+    width: 22px;
+    height: 201px;
+    left: -22px;
+    bottom: 0px;
+  }
+
+  .isotops-items::after {
+    width: 298px;
+    height: 22px;
+    right: 95px;
+    bottom: -22px;
+  }
+
+  .isotops-contents a {
+    font-size: 17px;
+    line-height: 22px;
+    padding: 8px 21px;
+  }
+
+  .testimonial-vertical {
+    margin-top: 15px;
+  }
+
+  /* works media css end*/
+
+  /* about media css */
+  .about-us {
+    padding-bottom: 108px;
+  }
+
+  .about-us-content h2 {
+    font-size: 48px;
+    line-height: 57px;
+    margin-bottom: 32px;
+  }
+
+  .about-us-image {
+    max-width: 457px;
+  }
+
+  .about-us-content a {
+    font-size: 19px;
+    line-height: 23px;
+    padding: 10px 30px;
+  }
+
+  .about-us-horizontal {
+    margin-bottom: 6px;
+    width: 117px;
+  }
+
+  .choose-us-head h2 {
+    margin-bottom: 32px;
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .choose-us {
+    padding-bottom: 58px;
+  }
+
+  .about-us-horizontal {
+    margin-bottom: 6px;
+    width: 114px;
+  }
+
+  .testimonials {
+    padding-bottom: 41px;
+  }
+
+  .testimonials-body {
+    padding: 34px 0px 87px 27px;
+    margin-bottom: 54px;
+    max-width: 1189px;
+  }
+
+  .testimonials-body::before {
+    width: 22px;
+    height: 159px;
+    right: 0px;
+    bottom: 0px;
+  }
+
+  .testimonials-body::after {
+    width: 283px;
+    height: 22px;
+    right: 0px;
+    bottom: -22px;
+  }
+
+  .testimonial-describtion ::before {
+    width: 89%;
+    max-width: 144px;
+    height: 10px;
+    top: -97px;
+    left: -178px;
+  }
+
+  /* about media css end*/
+}
+
+/* Extra large devices (large laptops and desktops, 1366px and up) */
+@media only screen and (max-width: 1366px) {
+  .main-padding {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  /* home media css */
+  .banner-content h2 {
+    font-size: 60px;
+    line-height: 80px;
+    margin-bottom: 39px;
+  }
+
+  .banner-content a {
+    padding: 11px 27px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+
+  .banner-image {
+    max-width: 585px;
+    margin-left: 56px;
+    margin-bottom: -9px;
+  }
+
+  .about {
+    padding-top: 56px;
+    padding-bottom: 55px;
+  }
+
+  .about-card h2 {
+    margin-top: 47px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .services {
+    padding-top: 129px;
+    padding-bottom: 96px;
+  }
+
+  .services-row::after {
+    width: 3px;
+    height: 51px
+  }
+
+  .chose-us-card p {
+    line-height: 27px;
+  }
+
+  .services-head {
+    max-width: 568px;
+    margin-bottom: 39px;
+  }
+
+  .services-head h2 {
+    font-size: 46px;
+    line-height: 57px;
+    margin-top: 0px;
+    margin-bottom: 4px;
+  }
+
+  .services-head::before {
+    width: 95px;
+    top: -18px;
+  }
+
+  .services-row::before {
+    bottom: -58px;
+    height: 51px;
+  }
+
+  .counter-row::before {
+    width: 375px;
+    height: 15px;
+    left: 6px;
+    top: -47px
+  }
+
+  .counter-row::after {
+    width: 375px;
+    height: 15px;
+    left: 6px;
+    bottom: -47px;
+  }
+
+  .portfolio {
+    padding-top: 153px;
+    padding-bottom: 122px;
+  }
+
+  .portfolio-row::before {
+    height: 51px;
+    top: -105px;
+  }
+
+  .portfolio-head h2 {
+    font-size: 46px;
+    line-height: 57px;
+  }
+
+  .portfolio-head::before {
+    width: 95px;
+    top: -19px;
+  }
+
+  .portfolio-view a {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 10px 32px;
+  }
+
+  .portfolio-row::after {
+    width: 3px;
+    height: 51px;
+    bottom: -75px;
+  }
+
+  footer {
+    padding-top: 155px;
+    padding-bottom: 27px;
+  }
+
+  .footer-row::before {
+    height: 51px;
+    top: -108px;
+  }
+
+  .footer-content {
+    max-width: 271px;
+  }
+
+  .footer-content h2 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .footer-social {
+    max-width: 200px;
+  }
+
+  .footer-copy-write {
+    margin-top: 72px;
+  }
+
+  .footer-Enquire a {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 10px 36px;
+  }
+
+  /* home media css end*/
+
+  /* services media css */
+  .services-banner {
+    padding-bottom: 18px;
+  }
+
+  .about-card {
+    padding: 48px 32px 0px 38px;
+  }
+
+  .services-banner .col-xxl-4:nth-child(4)::after {
+    top: 286px;
+    right: -11px;
+    width: 23px;
+    height: 229px;
+  }
+
+  .services-banner .col-xxl-4:nth-child(4)::before {
+    bottom: -22px;
+    left: 95px;
+    width: 305px;
+    height: 23px;
+  }
+
+  .technologies {
+    padding-bottom: 137px;
+  }
+
+  .technologies-head h2 {
+    font-size: 46px;
+    line-height: 57px;
+    margin-top: 35px;
+  }
+
+  .technologies-head::before {
+    width: 95px;
+    top: -19px;
+  }
+
+  .technologies-isotops-buttons {
+    max-width: 324px;
+    padding: 30px 65px 30px 91px;
+    margin-right: 7px;
+  }
+
+  .technologies-isotops-buttons ul li {
+    margin-bottom: 113px;
+  }
+
+  .technologies-tab {
+    max-width: 808px;
+    padding: 17px 118px 14px 33px;
+    margin-bottom: 15px;
+    min-height: 133px;
+  }
+
+  .technologies-tab-wrapper {
+    margin-right: 80px;
+    max-width: 87px;
+  }
+
+  .technologies-row::before {
+    height: 51px;
+    bottom: -90px;
+  }
+
+  .isotops-items {
+    max-width: 441px;
+    padding: 22px 0px;
+    margin-right: 158px;
+  }
+
+  .isotops-items button {
+    font-size: 23px;
+    line-height: 28px;
+    padding: 23px 0px 22px 0px;
+  }
+
+  .isotops-items::before {
+    width: 21px;
+    height: 198px;
+    left: -21px;
+    bottom: 0px;
+  }
+
+  .isotops-items::after {
+    width: 264px;
+    height: 21px;
+    right: 73px;
+    bottom: -21px;
+  }
+
+  .about-us-vertical {
+    height: 51px !important;
+  }
+
+  .work-isotops {
+    padding-bottom: 39px;
+  }
+
+  .testimonial-vertical {
+    margin-top: 0px;
+  }
+
+  /* services media css end*/
+  /* about media css */
+  .about-us {
+    padding-bottom: 95px;
+  }
+
+  .about-us-horizontal {
+    margin-bottom: 5px;
+    width: 95px;
+  }
+
+  .about-us-content h2 {
+    font-size: 46px;
+    line-height: 54px;
+    margin-bottom: 30px;
+  }
+
+  .about-us-content p {
+    margin-bottom: 59px;
+    font-size: 19px;
+  }
+
+  .about-us-content a {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 9px 28px;
+  }
+
+  .about-us-image {
+    max-width: 443px;
+  }
+
+  .choose-us-head h2 {
+    margin-bottom: 32px;
+    font-size: 46px;
+    line-height: 57px;
+  }
+
+  .chose-us-card {
+    padding: 32px 16px 0px 23px !important;
+    min-height: 429px !important;
+  }
+
+  .chose-us-card h2 {
+    margin-top: 46px;
+    font-size: 21px;
+    line-height: 27px;
+  }
+
+  .testimonial-describtion {
+    max-width: 715px;
+  }
+
+  .testimonials-body::before {
+    width: 20px;
+    height: 147px;
+  }
+
+  .testimonials-body::after {
+    width: 241px;
+    height: 20px;
+    right: 0px;
+    bottom: -20px;
+  }
+
+  .testimonials {
+    padding-bottom: 33px;
+  }
+
+  /* about media css end*/
+
+  /* contact-form media css */
+  .contact-form {
+    padding-bottom: 80px;
+  }
+
+  input {
+    padding: 18px 0px 17px 39px;
+    margin-bottom: 21px;
+  }
+
+  textarea {
+    padding: 18px 0px 17px 39px;
+  }
+
+  .contact-us-form {
+    width: 100%;
+    max-width: 562px;
+    padding-left: 9px;
+  }
+
+  .contact-form-describtions p {
+    font-size: 19px;
+    line-height: 23px;
+    margin-bottom: 159px;
+  }
+
+  /* contact-form media css end*/
+}
+
+/* Extra large devices (large laptops and desktops, 1280px and up) */
+@media only screen and (max-width: 1280px) {
+  .main-padding {
+    padding-left: 84px;
+    padding-right: 84px;
+  }
+
+  /* home media css */
+  .banner-content::before {
+    width: 90px;
+    height: 3px;
+    top: 32px;
+  }
+
+  .banner-content h2 {
+    font-size: 54px;
+    line-height: 70px;
+    margin-bottom: 36px;
+  }
+
+  .banner-image {
+    max-width: 562px;
+    margin-left: 50px;
+    margin-bottom: -9px;
+  }
+
+  .banner-content a {
+    padding: 9px 22px;
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .about-card h2 {
+    margin-top: 43px;
+    font-size: 21px;
+    line-height: 27px;
+  }
+
+  .about {
+    padding-top: 50px;
+    padding-bottom: 44px;
+  }
+
+  .services-card {
+    padding: 2px 32px;
+  }
+
+  .services-card-image {
+    max-width: 26px;
+  }
+
+  .counter-card h2 {
+    font-size: 42px;
+    line-height: 63px;
+  }
+
+  .counter-row::before {
+    width: 352px;
+    height: 15px;
+    left: 30px;
+    top: -49px;
+  }
+
+  .portfolio {
+    padding-top: 138px;
+    padding-bottom: 110px;
+  }
+
+  .counter-row::after {
+    width: 352px;
+    height: 15px;
+    left: 30px;
+    bottom: -49px;
+  }
+
+  .counter-card p {
+    font-size: 19px;
+    line-height: 23px;
+  }
+
+  .portfolio-row::before {
+    height: 51px;
+    top: -89px;
+  }
+
+  footer {
+    padding-top: 142px;
+    padding-bottom: 22px;
+  }
+
+  /* home media css end*/
+
+  /* services media css */
+  .services-banner .col-xxl-4:nth-child(4)::after {
+    top: 291px;
+    right: -9px;
+    width: 20px;
+    height: 229px;
+  }
+
+  .services-banner .col-xxl-4:nth-child(4)::before {
+    bottom: -21px;
+    left: 95px;
+    width: 285px;
+    height: 20px;
+  }
+
+  .technologies-isotops-buttons {
+    max-width: 285px;
+    padding: 30px 49px 30px 73px;
+    margin-right: 6px;
+  }
+
+  .technologies-tab {
+    max-width: 792px;
+    padding: 17px 118px 14px 33px;
+    margin-bottom: 15px;
+    min-height: 133px;
+  }
+
+  /* services media css end*/
+
+  /* works media css */
+  .isotops-items {
+    max-width: 292px;
+    padding: 22px 0px;
+    margin-right: 142px;
+  }
+
+  .isotops-items::before {
+    width: 20px;
+    height: 198px;
+    left: -20px;
+    bottom: 0px;
+  }
+
+  .isotops-items::after {
+    width: 240px;
+    height: 20px;
+    right: 72px;
+    bottom: -20px;
+  }
+
+  /* works media css end*/
+
+  /* about media css */
+
+  .chose-us-card h2 {
+    margin-top: 28px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .chose-us-card {
+    padding: 28px 7px 0px 20px !important;
+    min-height: 430px !important;
+  }
+
+  .chose-us-card .card-image {
+    max-width: 73px;
+    min-height: 63px;
+  }
+
+  .testimonials-body::before {
+    width: 16px;
+    height: 143px;
+  }
+
+  .testimonials-body::after {
+    width: 216px;
+    height: 16px;
+    right: 0px;
+    bottom: -16px;
+  }
+
+  .testimonials-body {
+    padding: 28px 0px 77px 27px;
+    margin-bottom: 51px;
+    max-width: 1189px;
+  }
+
+  /* about media css end*/
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  .main-padding {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .header-logo {
+    width: 100%;
+    max-width: 210px;
+  }
+
+  ul#menu {
+    max-width: 610px;
+  }
+
+  /* home media css */
+  .banner {
+    padding-top: 88px;
+  }
+
+  .banner-image {
+    max-width: 502px;
+    margin-left: 44px;
+  }
+
+  .banner-content h2 {
+    font-size: 46px;
+    line-height: 61px;
+    margin-bottom: 35px;
+  }
+
+  .banner-content::before {
+    width: 75px;
+    height: 3px;
+    top: 33px;
+  }
+
+  .banner-content a {
+    padding: 8px 16px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .about {
+    padding-top: 45px;
+    padding-bottom: 42px;
+  }
+
+  .about-card {
+    padding: 43px 15px 0px 32px;
+  }
+
+  .card-image {
+    max-width: 78px;
+    min-height: 78px;
+  }
+
+  .services {
+    padding-top: 100px;
+    padding-bottom: 75px;
+  }
+
+  .services-row::after {
+    width: 3px;
+    height: 45px;
+    top: -78px;
+  }
+
+  .services-head::before {
+    width: 70px;
+    top: -16px;
+  }
+
+  .services-head h2 {
+    font-size: 41px;
+    line-height: 52px;
+    margin-top: 0px;
+    margin-bottom: 4px;
+  }
+
+  .services-card {
+    padding: 0px 31px;
+  }
+
+  .services-row::before {
+    bottom: -48px;
+    height: 45px;
+  }
+
+  .counter {
+    padding: 26px 0px;
+  }
+
+  .counter-row::before {
+    width: 341px;
+    height: 14px;
+    left: 41px;
+    top: -40px;
+  }
+
+  .counter-row::after {
+    width: 341px;
+    height: 14px;
+    left: 41px;
+    bottom: -41px;
+  }
+
+  .counter-card h2 {
+    font-size: 39px;
+    line-height: 59px;
+  }
+
+  .counter-card {
+    padding: 18px 3px 27px 32px;
+    max-width: 228px;
+  }
+
+  .counter-card p {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .portfolio-row::before {
+    height: 45px;
+    top: -84px;
+  }
+
+  .portfolio-row::after {
+    width: 3px;
+    height: 45px;
+    bottom: -73px;
+  }
+
+  .portfolio-head::before {
+    width: 70px;
+    top: -16px;
+  }
+
+  .portfolio-head h2 {
+    font-size: 41px;
+    line-height: 52px;
+  }
+
+  .portfolio-view a {
+    font-size: 17px;
+    line-height: 21px;
+    padding: 8px 30px;
+  }
+
+  .footer-row::before {
+    height: 45px;
+    top: -101px;
+  }
+
+  footer {
+    padding-top: 132px;
+    padding-bottom: 19px;
+  }
+
+  .footer-social {
+    max-width: 194px;
+  }
+
+  .footer-content {
+    max-width: 255px;
+  }
+
+  .footer-content h2 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .footer-Enquire a {
+    font-size: 17px;
+    line-height: 21px;
+    padding: 9px 29px;
+  }
+
+  /* home media css end*/
+
+  /* services media css */
+  .card-image .fa {
+    font-size: 75px;
+  }
+
+  .servives-card {
+    min-height: 500px;
+  }
+
+  .services-banner .col-xxl-4:nth-child(4)::before {
+    bottom: -20px;
+    left: 95px;
+    width: 273px;
+    height: 20px;
+  }
+
+  .services-banner .col-xxl-4:nth-child(4)::after {
+    top: 291px;
+    right: -8px;
+    width: 20px;
+    height: 229px;
+  }
+
+  .technologies {
+    padding-bottom: 125px;
+  }
+
+  .technologies-head::before {
+    width: 70px;
+    top: -16px;
+  }
+
+  .technologies-head h2 {
+    font-size: 41px;
+    line-height: 54px;
+    margin-top: 21px;
+  }
+
+  .technologies-head {
+    max-width: 612px;
+    margin-bottom: 40px;
+  }
+
+  .technologies-isotops-buttons ul li a {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .technologies-tab {
+    max-width: 757px;
+    padding: 15px 43px 12px 26px;
+    margin-bottom: 15px;
+    min-height: 129px;
+  }
+
+  .technologies-row::before {
+    height: 45px;
+    bottom: -84px;
+  }
+
+  /* services media css end*/
+
+  /* works media css */
+  .grid {
+    max-width: 749px;
+    margin: 0 auto;
+  }
+
+  .isotops-items {
+    max-width: 295px;
+    padding: 22px 0px;
+    margin-right: 147px;
+  }
+
+  .isotops-items button {
+    font-size: 22px;
+    line-height: 22px;
+    padding: 22px 0px 22px 0px;
+  }
+
+  .isotops-items::after {
+    width: 240px;
+    height: 20px;
+    right: 75px;
+    bottom: -20px;
+  }
+
+  .isotops-contents a {
+    font-size: 16px;
+    line-height: 21px;
+    padding: 8px 17px;
+  }
+
+  .isotops-contents {
+    max-width: 334px;
+    padding: 41px 0px 90px;
+  }
+
+  .about-us-vertical {
+    height: 45px !important;
+  }
+
+  /* works media css end*/
+
+  /* about media css */
+  .about-us-horizontal {
+    margin-bottom: 5px;
+    width: 75px;
+  }
+
+  .about-us-content h2 {
+    font-size: 41px;
+    line-height: 46px;
+    margin-bottom: 28px;
+  }
+
+  .about-us-content p {
+    margin-bottom: 50px;
+    font-size: 18px;
+  }
+
+  .about-us-content a {
+    font-size: 17px;
+    line-height: 21px;
+    padding: 9px 23px;
+  }
+
+  .about-us-content {
+    width: 100%;
+    max-width: 602px;
+    padding-top: 19px;
+  }
+
+  .about-us-image {
+    max-width: 411px;
+  }
+
+  .about-us-describtion {
+    margin-top: 21px;
+  }
+
+  .choose-us-head h2 {
+    margin-bottom: 27px;
+    font-size: 41px;
+    line-height: 55px;
+  }
+
+  .choose-us-head h2 {
+    margin-bottom: 20px;
+    font-size: 41px;
+    line-height: 52px;
+  }
+
+  .carousel-control-prev {
+    left: 37%;
+  }
+
+  .carousel-control-next {
+    left: 48%;
+  }
+
+  /* about media css end*/
+
+  /* contact media css */
+  .contact-form {
+    padding-bottom: 58px;
+  }
+
+  .submit {
+    margin-top: 33px;
+    padding: 12px 51px;
+    font-size: 19px;
+    line-height: 23px;
+  }
+
+  .contact-form-help {
+    margin-top: 23px;
+  }
+
+  .contact-form-describtions p {
+    font-size: 19px;
+    line-height: 23px;
+    margin-bottom: 123px;
+  }
+
+  /* contact media css end*/
+}
+
+/* Extra large devices (large laptops and desktops, 1199px and up) */
+@media only screen and (max-width: 1199px) {
+  .counter-row::before {
+    width: 341px;
+    height: 14px;
+    left: -41px;
+    top: -40px;
+  }
+
+  .counter-row::after {
+    width: 341px;
+    height: 14px;
+    left: -41px;
+    bottom: -41px;
+  }
+}
+
+/* Large devices (laptops/desktops, 1152px and up) */
+@media only screen and (max-width: 1152px) {
+  .header-logo {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  ul#menu {
+    max-width: 591px;
+  }
+
+  .main-padding {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  /* home media css */
+  .banner {
+    padding-top: 70px;
+  }
+
+  .banner-content h2 {
+    font-size: 40px;
+    line-height: 55px;
+    margin-bottom: 27px;
+  }
+
+  .banner-content::before {
+    width: 63px;
+    height: 2px;
+    top: 34px;
+  }
+
+  .main-padding {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .card-image {
+    max-width: 74px;
+    min-height: 74px;
+  }
+
+  .about-card {
+    padding: 37px 15px 0px 32px;
+    min-height: 484px
+  }
+
+  .card-image .fa {
+    font-size: 74px;
+  }
+
+  /* home media css */
+
+  /* services media css */
+  .servives-card {
+    min-height: 469px;
+  }
+
+  .services-banner .col-xxl-4:nth-child(4)::after {
+    top: 291px;
+    right: -6px;
+    width: 18px;
+    height: 178px;
+  }
+
+  .services-banner .col-xxl-4:nth-child(4)::before {
+    bottom: -18px;
+    left: 94px;
+    width: 264px;
+    height: 18px;
+  }
+
+  .technologies-isotops-buttons ul li a {
+    font-size: 25px;
+    line-height: 29px;
+  }
+
+  .technologies-isotops-buttons {
+    max-width: 275px;
+    padding: 30px 49px 30px 64px;
+    margin-right: 6px;
+  }
+
+  .technologies-tab {
+    max-width: 746px;
+    padding: 15px 39px 12px 26px;
+    margin-bottom: 15px;
+    min-height: 126px;
+  }
+
+  .grid {
+    max-width: 725px;
+  }
+
+  .isotops-contents {
+    max-width: 310px;
+    padding: 53px 0px 66px;
+  }
+
+  .isotops-contents h2 {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 12px;
+  }
+
+  .isotops-contents p {
+    font-size: 18px;
+    line-height: 27px;
+    margin: 16px 0px 47px;
+  }
+
+  .isotops-contents a {
+    font-size: 16px;
+    line-height: 21px;
+    padding: 8px 15px;
+  }
+
+  /* services media css end*/
+}
+
+/* Large devices (laptops/desktops, 1114px and up) */
+@media only screen and (max-width: 1114px) {
+  .main-padding {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .header-logo {
+    width: 100%;
+    max-width: 188px;
+  }
+
+  ul#menu {
+    max-width: 575px;
+  }
+
+  /* home media css */
+  .banner-content h2 {
+    font-size: 35px;
+    line-height: 53px;
+    margin-bottom: 27px;
+  }
+
+  .about-card p {
+    font-size: 20px;
+    line-height: 29px;
+    margin-bottom: 0px;
+  }
+
+  .counter-row::before {
+    width: 326px;
+    height: 14px;
+    left: -17px;
+    top: -40px;
+  }
+
+  .counter-row::after {
+    width: 326px;
+    height: 14px;
+    left: -17px;
+    bottom: -41px;
+  }
+
+  .swiper-button-next {
+    top: 94%;
+    z-index: 12;
+    right: 41%;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 8px;
+    left: 0;
+    width: 100%;
+  }
+
+  .footer-social {
+    max-width: 184px;
+  }
+
+  .footer-row::before {
+    height: 45px;
+    top: -87px;
+  }
+
+  footer {
+    padding-top: 124px;
+    padding-bottom: 16px;
+  }
+
+  /* home media css end*/
+
+  /* services media css */
+  .services-banner .col-xxl-4:nth-child(4)::before {
+    bottom: -18px;
+    left: 94px;
+    width: 257px;
+    height: 18px;
+  }
+
+  .technologies-tab {
+    max-width: 719px;
+    padding: 15px 39px 12px 24px;
+    margin-bottom: 15px;
+    min-height: 119px;
+  }
+
+  /* services media css end*/
+
+
+  /* works media css */
+  .grid {
+    max-width: 704px;
+  }
+
+  .isotops-contents {
+    max-width: 289px;
+    padding: 37px 0px 66px;
+  }
+
+  /* works media css end*/
+
+  /* about media css */
+  .chose-us-card p {
+    line-height: 26px;
+  }
+
+
+  /* about media css end*/
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (max-width: 1024px) {
+  .main-padding {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  ul#menu {
+    max-width: 550px;
+  }
+
+  /* home media css */
+  .banner-content h2 {
+    font-size: 32px;
+    line-height: 51px;
+    margin-bottom: 25px;
+  }
+
+  .banner-image {
+    max-width: 465px;
+    margin-left: 44px;
+  }
+
+  .about {
+    padding-top: 38px;
+    padding-bottom: 36px;
+  }
+
+  .about-card {
+    padding: 35px 13px 0px 30px;
+    min-height: 473px;
+  }
+
+  .about-card h2 {
+    margin-top: 43px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .about-card p {
+    font-size: 19px;
+    line-height: 29px;
+    margin-bottom: 0px;
+  }
+
+  .services-row::after {
+    width: 2px;
+    height: 40px;
+    top: -73px;
+  }
+
+  .services-head h2 {
+    font-size: 36px;
+    line-height: 51px;
+    margin-top: 0px;
+    margin-bottom: 4px;
+  }
+
+  .services-head::before {
+    width: 62px;
+    top: -11px;
+  }
+
+  .services-head {
+    max-width: 471px;
+    margin-bottom: 32px;
+  }
+
+  .services-head p {
+    font-size: 19px;
+    line-height: 24px;
+  }
+
+  .services-card {
+    padding: 0px 31px;
+    align-items: center;
+  }
+
+  .services-row::before {
+    bottom: -46px;
+    height: 40px;
+    width: 2px;
+  }
+
+  .counter-card h2 {
+    font-size: 38px;
+    line-height: 51px;
+  }
+
+  .counter-card {
+    padding: 16px 3px 25px 29px;
+    max-width: 219px;
+  }
+
+  .counter {
+    padding: 23px 0px;
+  }
+
+  .counter-row::before {
+    width: 288px;
+    height: 13px;
+    left: 17px;
+    top: -36px;
+  }
+
+  .counter-row::after {
+    width: 288px;
+    height: 13px;
+    left: 17px;
+    bottom: -38px;
+  }
+
+  .portfolio {
+    padding-top: 126px;
+    padding-bottom: 100px;
+  }
+
+  .portfolio-row::before {
+    height: 40px;
+    top: -85px;
+    width: 2px;
+  }
+
+  .portfolio-head::before {
+    width: 62px;
+    top: -12px;
+  }
+
+  .portfolio-head h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .portfolio-head p {
+    line-height: 24px;
+    margin-bottom: 35px;
+  }
+
+  .portfolio-view a {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 6px 25px;
+  }
+
+  .portfolio-row::after {
+    width: 2px;
+    height: 40px;
+    bottom: -64px;
+  }
+
+  footer {
+    padding-top: 107px;
+    padding-bottom: 13px;
+  }
+
+  .footer-row::before {
+    height: 40px;
+    top: -74px;
+    width: 2px;
+  }
+
+  .footer-content h2 {
+    font-size: 40px;
+    line-height: 43px;
+  }
+
+  .footer-social {
+    max-width: 169px;
+  }
+
+  .social img {
+    width: 85%;
+  }
+
+  .footer-Enquire a {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 7px 26px;
+  }
+
+  .footer-copy-write {
+    margin-top: 62px;
+  }
+
+  .footer-content {
+    max-width: 227px;
+  }
+
+  .footer-copy-write a {
+    font-size: 19px;
+    line-height: 23px;
+    margin-bottom: 8px;
+  }
+
+  /* home media css end*/
+
+
+  /* services media css */
+  .servives-card {
+    padding: 25px 13px 0px 30px;
+    min-height: 460px;
+  }
+
+  .services-banner .col-xxl-4:nth-child(4)::after {
+    top: 291px;
+    right: -6px;
+    width: 17px;
+    height: 168px;
+  }
+
+  .services-banner .col-xxl-4:nth-child(4)::before {
+    bottom: -16px;
+    left: 82px;
+    width: 244px;
+    height: 17px;
+  }
+
+  .technologies-head::before {
+    width: 62px;
+    top: -12px;
+  }
+
+  .technologies-head h2 {
+    font-size: 36px;
+    line-height: 51px;
+    margin-top: 6px;
+  }
+
+  .technologies-head p {
+    font-size: 19px;
+    line-height: 24px;
+  }
+
+  .technologies-isotops-buttons {
+    max-width: 232px;
+    padding: 20px 16px 20px 47px;
+    margin-right: 5px;
+  }
+
+  .technologies-tab {
+    max-width: 690px;
+    padding: 13px 37px 11px 23px;
+    margin-bottom: 15px;
+    min-height: 104px;
+  }
+
+  .technologies-tab-wrapper img {
+    height: 42px;
+  }
+
+  .technologies-tab-wrapper {
+    margin-right: 69px;
+    max-width: 77px;
+  }
+
+  .technologies-tab-wrapper p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .technologies-isotops-buttons ul li {
+    margin-bottom: 102px;
+  }
+
+  .technologies-isotops-buttons ul li a {
+    font-size: 23px;
+    line-height: 29px;
+  }
+
+  .technologies-row::before {
+    height: 40px;
+    bottom: -77px;
+    width: 2px;
+  }
+
+  /* services media css end*/
+
+  /* works media css */
+  .grid {
+    max-width: 595px;
+  }
+
+  .isotops-items button {
+    font-size: 20px;
+    line-height: 21px;
+    padding: 19px 0px 19px 0px;
+  }
+
+  .isotops-items {
+    max-width: 295px;
+    padding: 11px 0px;
+    margin-right: 147px;
+  }
+
+  .isotops-images {
+    max-width: 340px;
+    min-height: 265px;
+    margin-right: 19px;
+  }
+
+  .isotops-contents {
+    max-width: 265px;
+    padding: 23px 0px 0px;
+  }
+
+  .isotops-contents h2 {
+    font-size: 23px;
+    line-height: 23px;
+    margin-bottom: 10px;
+  }
+
+  .isotops-contents p {
+    font-size: 17px;
+    line-height: 25px;
+    margin: 6px 0px 25px;
+  }
+
+  .isotope-vertical {
+    width: 64px;
+    height: 1px !important;
+  }
+
+  .isotops-contents a {
+    font-size: 16px;
+    line-height: 21px;
+    padding: 7px 13px;
+  }
+
+  .about-us-vertical {
+    height: 40px !important;
+    width: 2px;
+    margin-top: 18px;
+  }
+
+  .isotops-items::after {
+    width: 225px;
+    height: 18px;
+    right: 79px;
+    bottom: -18px;
+  }
+
+  .isotops-items::before {
+    width: 18px;
+    height: 160px;
+    left: -20px;
+    bottom: 0px;
+  }
+
+  /* works media css end*/
+
+  /* about media css */
+  .about-us-horizontal {
+    margin-bottom: 1px;
+    width: 65px;
+    height: 2px !important;
+  }
+
+  .about-us-content h2 {
+    font-size: 36px;
+    line-height: 37px;
+    margin-bottom: 26px;
+  }
+
+  .about-us-describtion {
+    margin-top: 15px;
+  }
+
+  .about-us-content a {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 8px 19px;
+  }
+
+  .about-us-content p {
+    margin-bottom: 19px;
+    font-size: 18px;
+  }
+
+  .about-us-horizontal {
+    margin-bottom: 1px;
+    width: 62px;
+    height: 2px !important;
+  }
+
+  .choose-us {
+    padding-bottom: 30px;
+  }
+
+  .choose-us-head h2 {
+    margin-bottom: 18px;
+    font-size: 36px;
+    line-height: 43px;
+  }
+
+  .chose-us-card p {
+    line-height: 22px;
+  }
+
+  .testimonials {
+    padding-bottom: 24px;
+  }
+
+  .testimonial-describtion ::before {
+    display: none;
+  }
+
+  .testimonials-body {
+    padding: 23px 0px 57px 25px;
+    margin-bottom: 63px;
+    max-width: 1169px;
+  }
+
+  .testimonial-describtion h2 {
+    font-size: 26px;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-bottom: 11px;
+  }
+
+  .testimonial-describtion h4 {
+    font-size: 19px;
+    line-height: 23px;
+    margin-bottom: 44px;
+  }
+
+  .testimonials-body::before {
+    width: 12px;
+    height: 107px;
+  }
+
+  .testimonials-body::after {
+    width: 172px;
+    height: 12px;
+    right: 0px;
+    bottom: -12px;
+  }
+
+  /* about media css end*/
+
+
+  /* contact form media css */
+  .contact-form-help {
+    margin-top: 14px;
+  }
+
+  .contact-form-describtions p {
+    font-size: 19px;
+    line-height: 23px;
+    margin-bottom: 109px;
+  }
+
+  input {
+    padding: 17px 0px 17px 30px;
+    margin-bottom: 19px;
+  }
+
+  textarea {
+    padding: 17px 0px 17px 30px;
+  }
+
+  /* contact form media css end*/
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .main-padding {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+
+  ul#menu {
+    max-width: 538px;
+  }
+
+  /* home media css */
+  .banner-image {
+    max-width: 414px;
+    margin-left: 48px;
+  }
+
+  .banner {
+    padding-top: 61px;
+  }
+
+  .about {
+    padding-top: 32px;
+    padding-bottom: 30px;
+  }
+
+  .about-card {
+    padding: 29px 10px 0px 27px;
+    min-height: 473px;
+  }
+
+  .about-card h2 {
+    margin-top: 40px;
+    font-size: 19px;
+    line-height: 24px;
+  }
+
+  .about-card p {
+    font-size: 19px;
+    line-height: 28px;
+    margin-bottom: 0px;
+  }
+
+  .counter-row::before {
+    width: 288px;
+    height: 13px;
+    left: 23px;
+    top: -36px;
+  }
+
+  .counter-row::after {
+    width: 288px;
+    height: 13px;
+    left: 23px;
+    bottom: -38px;
+  }
+
+  .portfolio-images {
+    min-height: 270px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+  }
+
+  .swiper-button-next {
+    top: 91%;
+    z-index: 12;
+    right: 40%;
+  }
+
+  .swiper-button-prev {
+    top: 92%;
+    z-index: 12;
+    left: 42%;
+  }
+
+  footer {
+    padding-top: 100px;
+    padding-bottom: 12px;
+  }
+
+  .footer-social {
+    max-width: 164px;
+  }
+
+  .footer-content {
+    max-width: 205px;
+  }
+
+  .footer-content h2 {
+    font-size: 36px;
+    line-height: 41px;
+  }
+
+  .footer-copy-write {
+    margin-top: 58px;
+  }
+
+  /* home media css end*/
+
+
+  /* services media css */
+  .servives-card {
+    padding: 27px 10px 0px 27px;
+    min-height: 460px;
+  }
+
+  .services-banner .col-xxl-4:nth-child(4)::before {
+    bottom: -16px;
+    left: 82px;
+    width: 237px;
+    height: 17px;
+  }
+
+  .technologies-tab {
+    max-width: 679px;
+    padding: 13px 37px 11px 23px;
+    margin-bottom: 15px;
+    min-height: 104px;
+  }
+
+  .technologies {
+    padding-bottom: 116px;
+  }
+
+  .about-us-content h2 {
+    font-size: 34px;
+    line-height: 30px;
+    margin-bottom: 24px;
+  }
+
+  .about-us-horizontal {
+    margin-bottom: 1px;
+    width: 60px;
+    height: 1px !important;
+  }
+
+  .about-us-content {
+    width: 100%;
+    max-width: 602px;
+    padding-top: 16px;
+  }
+
+  .about-us {
+    padding-bottom: 70px;
+  }
+
+  .chose-us-card p {
+    line-height: 23px;
+  }
+
+  .chose-us-card h2 {
+    margin-top: 35px;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  /* services media css end*/
+}
+
+/* Large devices (laptops/desktops, 991px and up) */
+@media only screen and (max-width: 991px) {
+header{
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+  ul#menu {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .navbar-toggler {
+    background-color: #E9204F;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar-toggler-icon {
+    height: 3px;
+    width: 38px;
+    background-image: unset;
+    background-color: rgba(241, 233, 233, 0.733);
+    margin: 5px 0px;
+    border-radius: 5px;
+  }
+
+  header .navbar-nav li.active::after {
+    display: none;
+  }
+
+  /* home media css */
+  .banner-image {
+    max-width: 414px;
+    margin-left: 0px;
+}
+
+  .banner {
+    padding-top: 132px;
+}
+
+  .banner-content h2 {
+    font-size: 29px;
+    line-height: 50px;
+    margin-bottom: 26px;
+  }
+
+  .banner-content a {
+    padding: 8px 16px;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 24px;
+  }
+
+  .about-card {
+    padding: 31px 34px 0px 47px;
+    min-height: 440px;
+    margin-bottom: 20px;
+  }
+
+  .about {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+
+  .services-card-content h2 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .services-card-image {
+    max-width: 25px;
+  }
+
+  .services-card {
+    padding: 0px 24px;
+  }
+
+  .counter-card h2 {
+    font-size: 35px;
+    line-height: 47px;
+  }
+
+  .counter-card {
+    padding: 14px 11px 21px 24px;
+    max-width: 191px;
+    margin-bottom: 8px;
+  }
+
+  .counter-card p {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .counter-row::before {
+    width: 277px;
+    height: 11px;
+    left: 42px;
+    top: -26px;
+}
+
+.counter-row::after {
+  width: 277px;
+  height: 11px;
+  left: 42px;
+  bottom: -26px;
+}
+
+  .counter {
+    padding: 15px 0px;
+  }
+
+  footer {
+    padding-top: 87px;
+    padding-bottom: 11px;
+  }
+
+  .footer-row::before {
+    height: 31px;
+    top: -59px;
+    width: 2px;
+  }
+
+  .footer-social {
+    max-width: 161px;
+  }
+
+  .social img {
+    width: 80%;
+  }
+
+  .footer-content h2 {
+    font-size: 34px;
+    line-height: 36px;
+  }
+
+  .footer-copy-write a {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 7px;
+  }
+
+  .footer-content {
+    max-width: 193px;
+  }
+
+  .footer-copy-write {
+    margin-top: 54px;
+  }
+
+  .footer-Enquire a {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 7px 24px;
+  }
+
+  /* home media css end*/
+
+  /* services media css */
+  .services-banner .col-xxl-4:nth-child(4)::after {
+    top: 273px;
+    right: -5px;
+    width: 17px;
+    height: 168px;
+  }
+
+  .services-banner .col-xxl-4:nth-child(4)::before {
+    bottom: 3px;
+    left: 238px;
+    width: 237px;
+    height: 17px;
+  }
+
+  .technologies-isotops-buttons {
+    max-width: 224px;
+    padding: 20px 16px 20px 43px;
+    margin-right: 6px;
+  }
+
+  .technologies-isotops-buttons ul li a {
+    font-size: 23px;
+    line-height: 27px;
+  }
+
+  .technologies-tab-wrapper img {
+    height: 39px;
+  }
+
+  /* services media css end*/
+
+  /* about media css */
+  .about-us-image {
+    max-width: 344px;
+  }
+
+  .about-us-content {
+    max-width: 502px;
+    padding-top: 14px;
+  }
+
+  .about-us-content h2 {
+    font-size: 31px;
+    line-height: 22px;
+    margin-bottom: 22px;
+  }
+
+  .about-us-describtion {
+    margin-top: 10px;
+  }
+
+  .about-us-content a {
+    font-size: 15px;
+    line-height: 18px;
+    padding: 7px 17px;
+  }
+
+  .about-us {
+    padding-bottom: 56px;
+  }
+
+  .choose-us-head h2 {
+    margin-bottom: 19px;
+    font-size: 33px;
+    line-height: 40px;
+  }
+
+  .chose-us-card {
+    padding: 33px 35px 0px 45px !important;
+    min-height: 432px !important;
+  }
+
+  .chose-us-card h2 {
+    margin-top: 35px;
+    font-size: 21px;
+    line-height: 27px;
+  }
+
+  .chose-us-card p {
+    font-size: 19px !important;
+    line-height: 26px !important;
+  }
+
+  .testimonial-describtion h2 {
+    font-size: 24px;
+    line-height: 25px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .testimonial-describtion h4 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 41px;
+  }
+
+  .testimonial-describtion p {
+    font-size: 19px;
+    line-height: 24px;
+  }
+
+  .testimonials-body {
+    padding: 23px 0px 41px 25px;
+    margin-bottom: 63px;
+    max-width: 907px;
+  }
+
+  /* about media css end*/
+}
+
+/* Medium devices (landscape tablets, 884px and up) */
+@media only screen and (max-width: 884px) {
+
+  /* home media css */
+  .banner-content h2 {
+    font-size: 27px;
+    line-height: 39px;
+    margin-bottom: 26px;
+  }
+
+  .about {
+    padding-top: 29px;
+    padding-bottom: 8px;
+  }
+
+  .services-row::after {
+    width: 2px;
+    height: 36px;
+    top: -62px;
+  }
+
+  .services {
+    padding-top: 91px;
+    padding-bottom: 67px;
+  }
+
+  .services-head {
+    max-width: 448px;
+    margin-bottom: 31px;
+  }
+
+  .counter-row::before {
+    width: 277px;
+    height: 11px;
+    left: -42px;
+    top: -26px;
+  }
+
+  .counter-row::after {
+    width: 277px;
+    height: 11px;
+    left: -42px;
+    bottom: -26px;
+  }
+
+  .services-row::before {
+    bottom: -41px;
+    height: 36px;
+    width: 2px;
+  }
+
+  .portfolio-row::before {
+    height: 36px;
+    top: -87px;
+    width: 2px;
+  }
+
+  .portfolio {
+    padding-top: 121px;
+    padding-bottom: 57px;
+  }
+
+  .portfolio-row::after {
+    width: 2px;
+    height: 36px;
+    bottom: -37px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 25px;
+    left: 0;
+    width: 100%;
+  }
+
+  .swiper-button-prev {
+    top: 88%;
+    z-index: 12;
+    left: 41%;
+  }
+
+  .swiper-button-next {
+    top: 88%;
+    z-index: 12;
+    right: 39%;
+  }
+
+  /* home media css end*/
+
+  /* services media css */
+  .services-banner .col-xxl-4:nth-child(4)::after {
+    top: 272px;
+    right: -5px;
+    width: 17px;
+    height: 168px;
+  }
+
+  .services-banner .col-xxl-4:nth-child(4)::before {
+    bottom: 3px;
+    left: 184px;
+    width: 237px;
+    height: 17px;
+  }
+
+  .technologies-head h2 {
+    font-size: 33px;
+    line-height: 49px;
+    margin-top: 6px;
+  }
+
+  .technologies-isotops-buttons {
+    max-width: 175px;
+    padding: 17px 14px 14px 26px;
+    margin-right: 6px;
+  }
+
+  .technologies-tab {
+    max-width: 627px;
+    padding: 13px 37px 11px 23px;
+    margin-bottom: 15px;
+    min-height: 103px;
+  }
+
+  .technologies-tab-wrapper {
+    margin-right: 64px;
+    max-width: 75px;
+  }
+
+  .technologies-tab-wrapper img {
+    height: 36px;
+  }
+
+  .technologies-row::before {
+    height: 36px;
+    bottom: -66px;
+    width: 2px;
+  }
+
+  .technologies {
+    padding-bottom: 98px;
+  }
+
+  /* services media css end*/
+
+  /*works media css  */
+  .isotops-items {
+    max-width: 199px;
+    padding: 10px 0px;
+    margin-right: 74px;
+  }
+
+  .isotops-items::before {
+    width: 16px;
+    height: 157px;
+    left: -16px;
+    bottom: 0px;
+  }
+
+  .isotops-items::after {
+    width: 176px;
+    height: 16px;
+    right: 39px;
+    bottom: -16px;
+  }
+
+  .isotops-contents a {
+    font-size: 16px;
+    line-height: 21px;
+    padding: 7px 9px;
+  }
+
+  .about-us-vertical {
+    height: 36px !important;
+    width: 2px;
+    margin-top: 17px;
+  }
+
+  .work-isotops {
+    padding-bottom: 21px;
+  }
+
+  /*works media css  end*/
+
+  /* about media css */
+  .about-us-content h2 {
+    font-size: 26px;
+    line-height: 11px;
+    margin-bottom: 19px;
+  }
+
+  .about-us-describtion {
+    margin-top: 5px;
+  }
+
+  .chose-us-card h2 {
+    margin-top: 35px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .carousel-control-prev {
+    left: 36%;
+  }
+
+  .carousel-control-next {
+    left: 49%;
+  }
+
+  /* about media css end*/
+}
+
+/* Medium devices (landscape tablets, 834px and up) */
+@media only screen and (max-width: 834px) {
+
+  /* home media css */
+
+  .banner-content h2 {
+    font-size: 26px;
+    line-height: 39px;
+    margin-bottom: 26px;
+  }
+
+  .banner-content a {
+    padding: 6px 14px;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 24px;
+  }
+
+  .services-card {
+    padding: 0px 19px;
+  }
+
+  .services-card-image {
+    max-width: 22px;
+  }
+
+  .counter-row::before {
+    width: 247px;
+    height: 11px;
+    left: -16px;
+    top: -26px;
+  }
+
+  .counter-row::after {
+    width: 247px;
+    height: 11px;
+    left: -16px;
+    bottom: -26px;
+  }
+
+  .portfolio-head {
+    width: 100%;
+    max-width: 410px;
+  }
+
+  .portfolio-images {
+    min-height: 245px;
+  }
+
+  .swiper-button-prev {
+    top: 87%;
+    z-index: 12;
+    left: 41%;
+  }
+
+  .swiper-button-next {
+    top: 87%;
+    z-index: 12;
+    right: 39%;
+  }
+
+  .footer-social {
+    max-width: 156px;
+  }
+
+  .social img {
+    width: 76%;
+  }
+
+  .footer-Enquire a {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 6px 21px;
+  }
+
+  .footer-content {
+    max-width: 188px;
+  }
+
+  .footer-content h2 {
+    font-size: 33px;
+    line-height: 36px;
+  }
+
+  /* home media css end*/
+
+  /* services media css */
+  .services-banner .col-xxl-4:nth-child(4)::before {
+    bottom: 3px;
+    left: 165px;
+    width: 231px;
+    height: 17px;
+  }
+
+  .technologies-head {
+    max-width: 561px;
+    margin-bottom: 37px;
+  }
+
+  .technologies-isotops-buttons {
+    max-width: 163px;
+    padding: 16px 13px 13px 21px;
+    margin-right: 5px;
+  }
+
+  .technologies-tab {
+    max-width: 585px;
+    padding: 13px 37px 11px 23px;
+    margin-bottom: 15px;
+    min-height: 99px;
+  }
+
+  .technologies-tab-wrapper img {
+    height: 34px;
+  }
+
+  .technologies-tab-wrapper p {
+    font-size: 15px;
+    margin-top: 9px;
+  }
+
+  .technologies-tab-wrapper {
+    margin-right: 60px;
+    max-width: 73px;
+  }
+
+  /* services media css end*/
+
+  /* work media css */
+  .isotops-items {
+    max-width: 183px;
+    padding: 6px 0px;
+    margin-right: 48px;
+  }
+
+  .isotops-items button {
+    font-size: 19px;
+    line-height: 21px;
+    padding: 18px 0px 18px 0px;
+  }
+
+  .grid {
+    max-width: 570px;
+  }
+
+  .isotops-contents h2 {
+    font-size: 22px;
+    line-height: 23px;
+    margin-bottom: 9px;
+  }
+
+  .isotops-contents {
+    max-width: 253px;
+    padding: 23px 0px 0px;
+  }
+
+  .isotops-contents p {
+    font-size: 17px;
+    line-height: 23px;
+    margin: 6px 0px 21px;
+  }
+
+  .isotops-contents a {
+    font-size: 16px;
+    line-height: 21px;
+    padding: 6px 6px;
+  }
+
+  .isotops-items::after {
+    width: 156px;
+    height: 16px;
+    right: 39px;
+    bottom: -16px;
+  }
+
+  /* work media css end*/
+  /* about media css */
+  .about-us-horizontal {
+    margin-bottom: 0px;
+    width: 58px;
+    height: 1px !important;
+  }
+
+  .about-us-content h2 {
+    font-size: 24px;
+    line-height: 12px;
+    margin-bottom: 15px;
+  }
+
+  .about-us-content p {
+    margin-bottom: 18px;
+    font-size: 17px;
+  }
+
+  .chose-us-card p {
+    font-size: 18px !important;
+    line-height: 24px !important;
+  }
+
+  .chose-us-card h2 {
+    margin-top: 35px;
+    font-size: 19px;
+    line-height: 24px;
+  }
+
+  .testimonials-body {
+    padding: 18px 0px 37px 0px;
+    margin-bottom: 58px;
+    max-width: 754px;
+  }
+
+  /* about media css end*/
+
+  /* contact media css */
+  .contact-form-describtions {
+    max-width: 354px;
+  }
+
+  .contact-form-describtions p {
+    font-size: 19px;
+    line-height: 23px;
+    margin-bottom: 65px;
+  }
+
+  .contact-form-describtions ul li {
+    margin-bottom: 5px;
+  }
+
+  /* contact media css end*/
+}
+
+/* Medium devices (landscape tablets, 800px and up) */
+@media only screen and (max-width: 800px) {
+
+  /* home media css */
+  .banner-content h2 {
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 25px;
+  }
+
+  /* home media css end*/
+
+  /* services media css */
+  .services-banner .col-xxl-4:nth-child(4)::before {
+    bottom: 3px;
+    left: 148px;
+    width: 231px;
+    height: 17px;
+  }
+
+  .services-card-content {
+    max-width: 158px;
+  }
+
+  .technologies-tab-wrapper {
+    margin-right: 57px;
+    max-width: 82px;
+  }
+
+  .technologies-tab {
+    max-width: 554px;
+    padding: 13px 21px 11px 6px;
+    margin-bottom: 14px;
+    min-height: 98px;
+  }
+
+  /* services media css end*/
+
+  /* work media css */
+  .grid {
+    max-width: 545px;
+  }
+
+  /* work media css end*/
+
+  /* about media css */
+  .chose-us-card h2 {
+    margin-top: 33px;
+    font-size: 18px;
+    line-height: 13px;
+  }
+
+  /* about media css end*/
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .main-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* home media css */
+  .banner-content {
+    max-width: 100%;
+    padding-top: 42px;  
+  }
+
+  .counter-card {
+    padding: 13px 9px 20px 22px;
+    max-width: 185px;
+    margin-bottom: 0px;
+  }
+
+  .counter-card h2 {
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .counter-row::before {
+    width: 241px;
+    height: 10px;
+    left: 4px;
+    top: -25px;
+  }
+
+  .counter-row::after {
+    width: 241px;
+    height: 10px;
+    left: 4px;
+    bottom: -25px;
+  }
+
+  .portfolio-head p {
+    line-height: 24px;
+    margin-bottom: 33px;
+  }
+
+  .portfolio-images {
+    min-height: 219px;
+  }
+
+  .swiper-button-prev {
+    top: 86%;
+    z-index: 12;
+    left: 41%;
+  }
+
+  .swiper-button-next {
+    top: 86%;
+    z-index: 12;
+    right: 38%;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 24px;
+    left: 0;
+    width: 100%;
+  }
+
+  /* home media css end*/
+
+  /* services media css */
+  .services-banner .col-xxl-4:nth-child(4)::before {
+    bottom: 3px;
+    left: 138px;
+    width: 231px;
+    height: 17px;
+  }
+
+  .technologies-isotops-buttons {
+    max-width: 145px;
+    padding: 12px 8px 13px 16px;
+    margin-right: 5px;
+  }
+
+  .technologies-isotops-buttons ul li a {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .technologies-tab-wrapper {
+    margin-right: 53px;
+    max-width: 82px;
+  }
+
+  /* services media css end*/
+
+  /* works media css */
+  .isotops-items button {
+    font-size: 19px;
+    line-height: 21px;
+    padding: 16px 0px 16px 0px;
+  }
+
+  .isotops-items {
+    max-width: 175px;
+    padding: 6px 0px;
+    margin-right: 19px;
+  }
+
+  .isotops-items::before {
+    width: 14px;
+    height: 137px;
+    left: -14px;
+    bottom: 0px;
+  }
+
+  .isotops-items::after {
+    width: 126px;
+    height: 14px;
+    right: 38px;
+    bottom: -14px;
+  }
+
+  .isotops-contents {
+    max-width: 244px;
+    padding: 12px 0px 0px;
+  }
+
+  /* works media css end*/
+
+  /* about media css */
+  .chose-us-card {
+    padding: 32px 28px 0px 40px !important;
+    min-height: 429px !important;
+  }
+
+  .testimonials-body {
+    padding: 18px 0px 37px 0px;
+    margin-bottom: 50px;
+    max-width: 753px;
+  }
+
+  .testimonial-describtion {
+    max-width: 640px;
+  }
+
+  .testimonial-describtion h4 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 36px;
+  }
+
+  .carousel-control-prev {
+    left: 35%;
+  }
+
+  .carousel-control-next {
+    left: 50%;
+  }
+
+  /* about media css end*/
+}
+
+/* Medium devices (landscape tablets, 767px and up) */
+@media only screen and (max-width: 767px) {
+
+  /* home media css */
+  .banner {
+    padding-top: 85px;
+    padding-bottom: 20px;
+  }
+
+  .banner-content {
+    max-width: 100%;
+    padding-top: 42px; 
+    text-align: center; 
+  }
+  .banner-image {
+    max-width: 414px;
+    margin-left: unset;
+    margin: 0 auto;
+    margin-bottom: -26px;
+}
+.banner-content::before {
+  width: 63px;
+  height: 2px;
+  top: 34px;
+  left: 44%;
+}
+  .about {
+    padding-top: 23px;
+    padding-bottom: 4px;
+  }
+
+  .services-row::after {
+    width: 2px;
+    height: 36px;
+    top: -62px;
+    display: none;
+  }
+
+  .services-row::before {
+    bottom: -41px;
+    height: 36px;
+    width: 2px;
+    display: none;
+  }
+
+  .services {
+    padding-top: 77px;
+    padding-bottom: 52px;
+  }
+
+  .services-head {
+    max-width: 100%;
+    margin-bottom: 26px;
+    text-align: center;
+  }
+
+  .services-head::before {
+    width: 62px;
+    top: -11px;
+    left: 45%;
+  }
+
+  .counter-row::before {
+    width: 229px;
+    height: 10px;
+    left: 31px;
+    top: -25px;
+  }
+
+  .counter-row::after {
+    width: 229px;
+    height: 10px;
+    left: 31px;
+    bottom: -25px;
+  }
+
+  .portfolio-row::before {
+    height: 36px;
+    top: -87px;
+    width: 2px;
+    display: none;
+  }
+
+  .portfolio-row::after {
+    width: 2px;
+    height: 36px;
+    bottom: -37px;
+    display: none;
+  }
+
+  .portfolio {
+    padding-top: 92px;
+    padding-bottom: 13px;
+  }
+
+  .footer-row::before {
+    height: 31px;
+    top: -59px;
+    width: 2px;
+    display: none;
+  }
+
+  footer {
+    padding-top: 47px;
+    padding-bottom: 10px;
+  }
+
+  .footer-copy-write {
+    margin-top: 54px;
+  }
+
+  .footer-Enquire a {
+    font-size: 15px;
+    line-height: 18px;
+    padding: 6px 20px;
+  }
+
+  /* home media css end*/
+
+  /* services media css */
+  .services {
+    padding-top: 43px;
+    padding-bottom: 38px;
+  }
+
+  .technologies-head {
+    max-width: 643px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 37px;
+  }
+
+  .technologies-head::before {
+    width: 62px;
+    top: -12px;
+    left: 43%;
+  }
+
+  .technologies-isotops-buttons {
+    max-width: 142px;
+    padding: 12px 8px 13px 16px;
+    margin-right: 6px;
+  }
+
+  /* services media css end*/
+
+  /* work media css */
+  .isotope-layouts {
+    display: block;
+  }
+
+  .isotops-items {
+    max-width: 704px;
+    padding: 6px 0px;
+    margin-right: 0px;
+    margin-bottom: 32px;
+  }
+
+  .isotops-items::after {
+    width: 140px;
+    height: 14px;
+    right: 0px;
+    left: -14px;
+    bottom: -14px;
+  }
+
+  .grid {
+    max-width: 533px;
+  }
+
+  .isotops-images {
+    max-width: 360px;
+    min-height: 272px;
+    margin-right: 27px;
+  }
+
+  .isotops-contents {
+    max-width: 265px;
+    padding: 12px 0px 0px;
+  }
+
+  .isotops-contents h2 {
+    font-size: 21px;
+    line-height: 23px;
+    margin-bottom: 8px;
+  }
+
+  .isotops-contents p {
+    font-size: 17px;
+    line-height: 23px;
+    margin: 6px 0px 16px;
+  }
+
+  .isotope-vertical {
+    width: 57px;
+    height: 1px !important;
+    margin-bottom: 0px;
+  }
+
+  .testimonial-vertical {
+    margin-top: 0px;
+    display: none;
+  }
+
+  /* work media css end*/
+
+  /* about media css */
+  .about-us-image {
+    display: none;
+  }
+
+  .about-us-content {
+    max-width: 661px;
+    padding-top: 14px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about-us-horizontal {
+    margin-bottom: 0px;
+    width: 58px;
+    height: 1px !important;
+    margin: 0 auto;
+  }
+
+  .choose-us-head h2 {
+    margin-bottom: 19px;
+    font-size: 33px;
+    line-height: 56px;
+    text-align: center;
+  }
+
+  .about-us-vertical {
+    display: none;
+  }
+
+  /* about media css end*/
+
+  /* contact media css */
+  .contact-form {
+    padding-bottom: 44px;
+  }
+
+  .contact-form-describtions {
+    text-align: center;
+    max-width: 564px;
+    margin: 0 auto;
+    margin-bottom: 33px;
+  }
+
+  .contact-form-help {
+    margin-top: 10px;
+  }
+
+  .contact-form-describtions p {
+    font-size: 19px;
+    line-height: 23px;
+    margin-bottom: 32px;
+  }
+
+  .contact-us-form {
+    width: 100%;
+    max-width: 577px;
+    padding-left: 9px;
+    margin: 0 auto;
+  }
+
+  /* contact media css end*/
+}
+
+/* Medium devices (landscape tablets, 640px and up) */
+@media only screen and (max-width: 640px) {
+  .main-padding {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  /* home media css */
+  .about-card {
+    padding: 28px 14px 0px 21px;
+    min-height: 444px;
+    margin-bottom: 20px;
+  }
+
+  .counter-row::before {
+    width: 193px;
+    height: 9px;
+    left: 21px;
+    top: -24px;
+  }
+
+  .portfolio {
+    padding-top: 89px;
+    padding-bottom: 0px;
+  }
+
+  .counter-row::after {
+    width: 193px;
+    height: 9px;
+    left: 21px;
+    bottom: -24px;
+  }
+
+  .swiper-button-prev {
+    top: 81%;
+    z-index: 12;
+    left: 40%;
+  }
+
+  .swiper-button-next {
+    top: 81%;
+    z-index: 12;
+    right: 37%;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 38px;
+    left: 0;
+    width: 100%;
+  }
+
+  footer {
+    padding-top: 34px;
+    padding-bottom: 10px;
+  }
+
+  .footer-social {
+    max-width: 142px;
+  }
+
+  .social img {
+    width: 65%;
+  }
+
+  .footer-copy-write {
+    margin-top: 44px;
+  }
+
+  /* home media css end*/
+
+  /* services media css */
+  .services-banner .col-xxl-4:nth-child(4)::after {
+    top: 277px;
+    right: -4px;
+    width: 16px;
+    height: 167px;
+  }
+
+  .services-banner .col-xxl-4:nth-child(4)::before {
+    bottom: 4px;
+    left: 105px;
+    width: 214px;
+    height: 16px;
+  }
+
+  .technologies-isotops-buttons {
+    max-width: 136px;
+    padding: 10px 7px 10px 12px;
+    margin-right: 6px;
+  }
+
+  .technologies-tab {
+    max-width: 461px;
+    padding: 13px 21px 11px 6px;
+    margin-bottom: 14px;
+    min-height: 95px;
+  }
+
+  .technologies-head {
+    max-width: 523px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 37px;
+  }
+
+  /* services media css end*/
+
+  /* about media css */
+  .chose-us-card {
+    padding: 25px 10px 0px 11px !important;
+    min-height: 429px !important;
+  }
+
+  .choose-us-head h2 {
+    margin-bottom: 19px;
+    font-size: 31px;
+    line-height: 52px;
+    text-align: center;
+  }
+
+  .testimonial-describtion {
+    max-width: 538px;
+  }
+
+  .carousel-control-prev {
+    left: 34%;
+  }
+
+  .carousel-control-next {
+    left: 51%;
+  }
+
+  /* about media css end*/
+
+  /* contact media css */
+  .contact-form-describtions {
+    text-align: center;
+    max-width: 497px;
+    margin: 0 auto;
+    margin-bottom: 33px;
+  }
+
+  .submit {
+    margin-top: 20px;
+    padding: 11px 43px;
+    font-size: 19px;
+    line-height: 23px;
+  }
+
+  /* contact media css end*/
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+
+  /* home media css */
+  .card-image {
+    max-width: 70px;
+    min-height: 70px;
+  }
+
+  .about-card h2 {
+    margin-top: 35px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .services-head h2 {
+    font-size: 33px;
+    line-height: 47px;
+    margin-top: 0px;
+    margin-bottom: 4px;
+  }
+
+  .counter-row::before {
+    width: 180px;
+    height: 9px;
+    left: 21px;
+    top: -24px;
+  }
+
+  .counter-row::after {
+    width: 180px;
+    height: 9px;
+    left: 21px;
+    bottom: -24px;
+  }
+
+  .portfolio-images {
+    min-height: 173px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 29px;
+    left: 0;
+    width: 100%;
+  }
+
+  .swiper-pagination-bullet {
+    background: #FFFFFF !important;
+    width: 9px;
+    height: 9px;
+  }
+
+  .swiper-button-next {
+    top: 81%;
+    z-index: 12;
+    right: 36%;
+  }
+
+  .swiper-button-prev {
+    top: 81%;
+    z-index: 12;
+    left: 39%;
+  }
+
+  .portfolio-head h2 {
+    font-size: 33px;
+    line-height: 45px;
+  }
+
+  .portfolio-view a {
+    font-size: 15px;
+    line-height: 19px;
+    padding: 6px 20px;
+  }
+
+  .portfolio-head p {
+    line-height: 24px;
+    margin-bottom: 31px;
+    font-size: 19px;
+  }
+
+  /* home media css end*/
+
+  /* services media css */
+  .card-image .fa {
+    font-size: 70px;
+  }
+
+  .services-banner .col-xxl-4:nth-child(4)::before {
+    bottom: 4px;
+    left: 98px;
+    width: 201px;
+    height: 16px;
+  }
+
+  .technologies-isotops-buttons ul li a {
+    font-size: 19px;
+    line-height: 24px;
+  }
+
+  .technologies-isotops-buttons {
+    max-width: 124px;
+    padding: 9px 6px 9px 11px;
+    margin-right: 6px;
+  }
+
+  .technologies-tab {
+    max-width: 436px;
+    padding: 13px 21px 11px 6px;
+    margin-bottom: 14px;
+    min-height: 95px;
+  }
+
+  /* services media css end*/
+
+  /* about media css */
+  .choose-us-head h2 {
+    margin-bottom: 19px;
+    font-size: 30px;
+    line-height: 49px;
+    text-align: center;
+  }
+
+  .chose-us-card {
+    padding: 22px 8px 0px 9px !important;
+    min-height: 429px !important;
+  }
+
+  .chose-us-card .card-image {
+    max-width: 70px;
+    min-height: 63px;
+  }
+
+  .about-card h2 {
+    margin-top: 35px;
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .testimonial-describtion {
+    max-width: 512px;
+  }
+
+  .testimonial-describtion h4 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 35px;
+  }
+
+  .footer-content h2 {
+    font-size: 29px;
+    line-height: 36px;
+  }
+
+  /* about media css end*/
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (max-width: 576px) {
+
+  /* home media css */
+  .counter-row::before {
+    width: 171px;
+    height: 9px;
+    left: 21px;
+    top: -24px;
+  }
+
+  .counter-row::after {
+    width: 171px;
+    height: 9px;
+    left: 21px;
+    bottom: -24px;
+  }
+
+  .portfolio-head {
+    width: 100%;
+    max-width: 358px;
+  }
+
+  /* home media css end*/
+  /* services media css */
+  .services-banner .col-xxl-4:nth-child(4)::before {
+    bottom: 4px;
+    left: 86px;
+    width: 201px;
+    height: 16px;
+  }
+
+  .technologies-tab {
+    max-width: 412px;
+    padding: 12px 5px 10px 5px;
+    margin-bottom: 14px;
+    min-height: 90px;
+  }
+
+  .technologies-tab-wrapper img {
+    height: 32px;
+  }
+
+  .technologies-tab-wrapper p {
+    font-size: 15px;
+    margin-top: 8px;
+  }
+
+  .technologies-tab-wrapper {
+    margin-right: 28px;
+    max-width: 76px;
+  }
+
+  .technologies-row::before {
+    display: none;
+  }
+
+  .technologies {
+    padding-bottom: 53px;
+  }
+
+  .social img {
+    width: 61%;
+  }
+
+  .footer-social {
+    max-width: 137px;
+  }
+
+  .footer-content {
+    max-width: 157px;
+  }
+
+  .footer-content h2 {
+    font-size: 27px;
+    line-height: 34px;
+  }
+
+  .footer-Enquire a {
+    font-size: 15px;
+    line-height: 18px;
+    padding: 5px 15px;
+  }
+
+  .footer-copy-write a {
+    font-size: 17px;
+    line-height: 23px;
+    margin-bottom: 5px;
+  }
+
+  /* services media css end*/
+
+  /* about media css */
+  .about-us-content p {
+    margin-bottom: 18px;
+    font-size: 17px;
+    line-height: 23px;
+  }
+
+  .choose-us-head h2 {
+    font-size: 27px;
+    line-height: 45px;
+  }
+
+  .chose-us-card p {
+    font-size: 17px !important;
+    line-height: 21px !important;
+  }
+
+  .testimonial-describtion h4 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 29px;
+  }
+
+  .testimonial-describtion {
+    max-width: 420px;
+  }
+
+  .testimonial-describtion h2 {
+    font-size: 22px;
+    line-height: 23px;
+    margin-top: 13px;
+    margin-bottom: 8px;
+  }
+
+  .testimonial-describtion p {
+    font-size: 17px;
+    line-height: 23px;
+  }
+
+  .carousel-control-prev {
+    left: 33%;
+  }
+
+  .carousel-control-next {
+    left: 52%;
+  }
+
+  /* about media css end*/
+
+  /* contect media css */
+  .contact-form-describtions {
+    text-align: center;
+    max-width: 465px;
+    margin: 0 auto;
+    margin-bottom: 33px;
+  }
+
+  .contact-form-help {
+    margin-top: 6px;
+  }
+
+  .contact-form-describtions ul .fa {
+    font-size: 23px;
+    margin-right: 10px;
+  }
+
+  .contact-form-describtions ul li a {
+    font-size: 19px;
+    line-height: 23px;
+  }
+
+  .contact-us-form {
+    max-width: 516px;
+    padding-left: 0px;
+  }
+
+  .submit {
+    margin-top: 17px;
+    padding: 8px 33px;
+    font-size: 19px;
+    line-height: 22px;
+  }
+
+  /* contect media css end*/
+}
+
+/* Small devices (portrait tablets and large phones, 575px and up) */
+@media only screen and (max-width: 575px) {
+
+  /* home media css */
+  .about-card {
+    padding: 28px 31px 0px 39px;
+    min-height: 424px;
+    margin-bottom: 20px;
+    max-width: 487px;
+  }
+
+  .services-card {
+    padding: 0px 48px;
+  }
+
+  .about-card h2 {
+    margin-top: 35px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .banner-content h2 {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 17px;
+  }
+
+  .services {
+    padding-top: 35px;
+    padding-bottom: 9px;
+  }
+
+  .counter-row::before {
+    display: none;
+  }
+
+  .counter-row::after {
+    display: none;
+  }
+
+  .services-head h2 {
+    font-size: 32px;
+    line-height: 42px;
+    margin-top: 0px;
+    margin-bottom: 4px;
+  }
+
+  .counter-card {
+    padding: 13px 9px 20px 22px;
+    max-width: 185px;
+    margin-bottom: 15px;
+  }
+
+  .services-head p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .chose-us-card p {
+    font-size: 18px !important;
+    line-height: 23px !important;
+  }
+
+  .portfolio {
+    padding-top: 59px;
+    padding-bottom: 0px;
+  }
+
+  .portfolio-head p {
+    line-height: 24px;
+    margin-bottom: 31px;
+    font-size: 18px;
+  }
+
+  .portfolio-head h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .portfolio-images {
+    min-height: 159px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 27px;
+    left: 0;
+    width: 100%;
+  }
+
+  footer {
+    padding-top: 22px;
+    padding-bottom: 10px;
+  }
+
+  .footer-social {
+    max-width: 138px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .footer-content h2 {
+    font-size: 25px;
+    line-height: 33px;
+  }
+
+  .footer-content {
+    max-width: 143px;
+    margin-bottom: 10px;
+  }
+
+  .footer-Enquire {
+    text-align: center;
+  }
+
+  .footer-copy-write {
+    margin-top: 20px;
+  }
+
+  /* home media css end*/
+
+  /* servicees media css */
+  .services-banner .col-xxl-4:nth-child(4)::after {
+    display: none;
+  }
+
+  .services-banner .col-xxl-4:nth-child(4)::before {
+    display: none;
+  }
+
+  .services {
+    padding-top: 15px;
+    padding-bottom: 9px;
+  }
+
+  .services-card {
+    max-width: 495px;
+    margin: 0 auto;
+    margin-bottom: 18px;
+  }
+
+  .technologies-head h2 {
+    font-size: 31px;
+    line-height: 49px;
+    margin-top: 14px;
+  }
+
+  /* servicees media css end*/
+
+  /* works media css */
+  .isotops-items {
+    max-width: 499px;
+    padding: 6px 0px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+
+  /* works media css end*/
+
+  /* about media css */
+  .chose-us-card {
+    padding: 28px 30px 0px 38px !important;
+    min-height: 413px !important;
+  }
+
+  .choose-us-image {
+    max-width: 487px;
+    margin: 0 auto;
+  }
+
+  .testimonials-body::before {
+    width: 9px;
+    height: 103px;
+  }
+
+  .testimonials-body::after {
+    width: 166px;
+    height: 9px;
+    right: 0px;
+    bottom: -9px;
+  }
+
+  .contact-form {
+    padding-bottom: 24px;
+  }
+
+  .contact-us-form {
+    max-width: 501px;
+    padding-left: 0px;
+  }
+
+  /* about media css end*/
+}
+
+/* Small devices (portrait tablets and large phones, 540px and up) */
+@media only screen and (max-width: 540px) {
+
+  /* home media css */
+  .header-logo {
+    width: 100%;
+    max-width: 179px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 3px);
+  }
+
+  .portfolio {
+    padding-top: 46px;
+    padding-bottom: 0px;
+  }
+
+  .swiper-button-next {
+    top: 81%;
+    z-index: 12;
+    right: 35%;
+  }
+
+  /* home media css end*/
+
+  /* services media css */
+  .technologies-isotops-buttons ul li a {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .technologies-isotops-buttons {
+    max-width: 115px;
+    padding: 8px 5px 8px 10px;
+    margin-right: 5px;
+  }
+
+  .technologies-tab-wrapper img {
+    height: 28px;
+  }
+
+  .technologies-tab-wrapper {
+    margin-right: 20px;
+    max-width: 67px;
+  }
+
+  /* services media css end*/
+
+  /* works media css */
+  .isotops-contents h2 {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 6px;
+  }
+
+  .isotops-images {
+    max-width: 360px;
+    min-height: 272px;
+    margin-right: 18px;
+  }
+
+  .isotops-contents a {
+    font-size: 15px;
+    line-height: 19px;
+    padding: 5px 4px;
+  }
+
+  /* works media css end*/
+}
+
+/*  small Mobile devices( small Mobile devices, 480px and up) */
+@media only screen and (max-width: 480px) {
+
+  /* home media css */
+  .banner-content h2 {
+    font-size: 23px;
+    line-height: 33px;
+    margin-bottom: 21px;
+  }
+
+  .about {
+    padding-top: 16px;
+    padding-bottom: 0px;
+  }
+
+  .services {
+    padding-top: 26px;
+    padding-bottom: 8px;
+  }
+
+  .services-head h2 {
+    font-size: 31px;
+    line-height: 39px;
+    margin-top: 0px;
+    margin-bottom: 4px;
+  }
+
+  .services-head::before {
+    width: 62px;
+    top: -11px;
+    left: 43%;
+  }
+
+  .portfolio-head {
+    width: 100%;
+    max-width: 435px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .portfolio-head::before {
+    width: 62px;
+    top: -12px;
+    left: 42%;
+  }
+
+  .portfolio-head p {
+    line-height: 24px;
+    margin-bottom: 21px;
+    font-size: 18px;
+  }
+
+  .portfolio-view {
+    width: 100%;
+    max-width: 435px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .portfolio-images {
+    min-height: 147px;
+  }
+
+  .swiper-button-prev {
+    top: 80%;
+    z-index: 12;
+    left: 38%;
+  }
+
+  .swiper-button-next {
+    top: 80%;
+    z-index: 12;
+    right: 33%;
+  }
+
+  /* home media css end*/
+
+  /* services media css */
+  .technologies-tab-wrapper {
+    margin-right: 10px;
+    max-width: 62px;
+  }
+
+  /* services media css end*/
+
+  /* works media css */
+  .element-item {
+    display: block;
+  }
+
+  .isotops-images {
+    max-width: 376px;
+    min-height: 262px;
+    margin-right: 0px;
+  }
+
+  .isotops-contents {
+    max-width: 366px;
+    padding: 27px 0px 28px;
+  }
+
+  /* works media css end*/
+
+  /* about media css */
+  .carousel-control-prev {
+    left: 31%;
+  }
+
+  .carousel-control-next {
+    left: 54%;
+  }
+
+  .testimonials-body::before {
+    width: 7px;
+    height: 67px;
+  }
+
+  .testimonials-body::after {
+    width: 112px;
+    height: 7px;
+    right: 0px;
+    bottom: -7px;
+  }
+
+  .testimonial-describtion h2 {
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 8px;
+    margin-bottom: 6px;
+  }
+
+  /* about media css end*/
+
+  /* contact medi css */
+  .contact-form-help {
+    margin-top: 4px;
+  }
+
+  .contact-form-describtions ul .fa {
+    font-size: 21px;
+    margin-right: 7px;
+  }
+
+  .submit {
+    margin-top: 11px;
+    padding: 6px 26px;
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  /* contact medi css end*/
+}
+
+/*  small Mobile devices( small Mobile devices, 428px and up) */
+@media only screen and (max-width: 428px) {
+
+  /* home media css */
+  .portfolio-images {
+    min-height: 113px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 21px;
+    left: 0;
+    width: 100%;
+  }
+
+  .swiper-button-prev {
+    top: 80%;
+    z-index: 12;
+    left: 35%;
+  }
+
+  .swiper-button-next {
+    top: 80%;
+    z-index: 12;
+    right: 30%;
+  }
+
+  /* home media css */
+
+  /* services media css */
+  .technologies-isotops-buttons ul li a {
+    font-size: 17px;
+    line-height: 21px;
+  }
+
+  .technologies-isotops-buttons {
+    max-width: 109px;
+    padding: 6px 2px 3px 5px;
+    margin-right: 5px;
+  }
+
+  .technologies-tab-wrapper p {
+    font-size: 14px;
+    margin-top: 7px;
+  }
+
+  .technologies-tab-wrapper {
+    margin-right: 10px;
+    max-width: 59px;
+  }
+
+  .technologies-tab {
+    max-width: 280px;
+    padding: 9px 2px 7px 1px;
+    margin-bottom: 14px;
+    min-height: 87px;
+  }
+
+  /* services media css */
+
+  /* about media css */
+  .testimonial-describtion {
+    max-width: 334px;
+  }
+
+  .carousel-control-prev {
+    left: 29%;
+  }
+
+  .carousel-control-next {
+    left: 56%;
+  }
+
+  /* about media css end*/
+}
+
+/*  small Mobile devices( small Mobile devices, 425px and up) */
+@media only screen and (max-width: 425px) {
+
+  /* home media css */
+  .technologies-isotops-buttons {
+    max-width: 98px;
+    padding: 6px 2px 3px 5px;
+    margin-right: 5px;
+  }
+
+  footer {
+    padding-top: 19px;
+    padding-bottom: 8px;
+  }
+
+  .technologies-head h2 {
+    font-size: 29px;
+    line-height: 46px;
+    margin-top: 13px;
+  }
+
+  .isotops-items {
+    max-width: 369px;
+    padding: 6px 0px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+
+  /* home media css end*/
+
+  /* contact media css */
+  .contact-form-describtions {
+    text-align: center;
+    max-width: 383px;
+    margin: 0 auto;
+    margin-bottom: 31px;
+  }
+
+  input {
+    padding: 14px 0px 14px 23px;
+    margin-bottom: 16px;
+  }
+
+  textarea {
+    padding: 14px 0px 14px 23px;
+  }
+
+  /* contact media css end*/
+}
+
+/*  small Mobile devices( small Mobile devices, 414px and up) */
+@media only screen and (max-width: 414px) {
+
+  /* services media css */
+  .technologies-isotops-buttons {
+    max-width: 95px;
+    padding: 3px 4px 1px 0px;
+    margin-right: 5px;
+  }
+
+  /* services media css */
+}
+
+/*  small Mobile devices( small Mobile devices, 412px and up) */
+@media only screen and (max-width: 412px) {
+  .technologies-tab-wrapper img {
+    height: 25px;
+  }
+
+  .technologies-isotops-buttons ul li a {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .technologies-isotops-buttons {
+    max-width: 93px;
+    padding: 3px 4px 1px 0px;
+    margin-right: 5px;
+  }
+}
+
+/* extra small Mobile devices( extra small Mobile devices, 393px and up) */
+@media only screen and (max-width: 393px) {
+  .technologies-tab-wrapper {
+    margin-right: 15px;
+    max-width: 53px;
+  }
+
+  .technologies-isotops {
+    display: block;
+  }
+
+  .technologies-isotops-buttons {
+    max-width: 355px;
+    padding: 12px 11px 11px 21px;
+    margin-right: 0px;
+  }
+
+  .technologies-isotops-buttons ul {
+    display: flex;
+  }
+
+  .technologies-isotops-buttons ul li {
+    margin-bottom: 0px;
+    margin-right: 28px;
+  }
+
+  .technologies-tab {
+    max-width: 355px;
+    padding: 9px 2px 7px 1px;
+    margin-bottom: 14px;
+    min-height: 87px;
+  }
+
+  .technologies {
+    padding-bottom: 20px;
+  }
+}
+
+/* extra small Mobile devices( extra small Mobile devices, 375px and up) */
+@media only screen and (max-width: 375px) {
+
+  /* home media css */
+  .banner-content h2 {
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 21px;
+  }
+
+  .services-head h2 {
+    font-size: 28px;
+    line-height: 37px;
+    margin-top: -1px;
+    margin-bottom: 3px;
+  }
+
+  .services-head::before {
+    width: 62px;
+    top: -11px;
+    left: 40%;
+  }
+
+  .portfolio-head h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .swiper-button-prev {
+    top: 80%;
+    z-index: 12;
+    left: 34%;
+  }
+
+  .swiper-button-next {
+    top: 80%;
+    z-index: 12;
+    right: 28%;
+  }
+
+  /* home media css end*/
+
+  /* services medika css */
+  .technologies-isotops-buttons {
+    max-width: 355px;
+    padding: 10px 10px 10px 20px;
+    margin-right: 0px;
+  }
+
+  /* services medika css end*/
+
+  /* workks media css */
+  .work-isotops {
+    padding-bottom: 0px;
+  }
+
+  /* workks media css end*/
+
+  /* about media css */
+  .testimonial-describtion {
+    max-width: 309px;
+  }
+
+  .testimonials-body::after {
+    width: 112px;
+    height: 6px;
+    right: 0px;
+    bottom: -6px;
+  }
+  .contact-us-form {
+    max-width: 501px;
+    padding-left: 0px;
+    text-align: center;
+}
+  /* about media css end*/
+}
+
+/* extra small Mobile devices( extra small Mobile devices, 360px and up) */
+@media only screen and (max-width: 360px) {
+
+  /* home media css */
+  .banner-content::before {
+    width: 63px;
+    height: 2px;
+    top: 34px;
+    left: 41%;
+  }
+
+  .header-logo {
+    width: 100%;
+    max-width: 166px;
+  }
+
+  .services-card {
+    padding: 0px 24px;
+  }
+
+  /* home media css end*/
+
+  /* services media css */
+  .technologies-isotops-buttons {
+    max-width: 355px;
+    padding: 9px 3px 9px 21px;
+    margin-right: 0px;
+  }
+
+  .technologies-head::before {
+    width: 62px;
+    top: -10px;
+    left: 39%;
+  }
+
+  .technologies-isotops-buttons {
+    max-width: 355px;
+    padding: 8px 0px 8px 15px;
+    margin-right: 0px;
+  }
+
+  /* services media css end*/
+
+  /* about media css */
+  .choose-us-head h2 {
+    font-size: 26px;
+    line-height: 44px;
+  }
+
+  .chose-us-card {
+    padding: 25px 29px 0px 30px !important;
+    min-height: 413px !important;
+  }
+
+  /* about media css end*/
+}
+
+/*  extra small Mobile devices( extra small Mobile devices, 320px and up) */
+@media only screen and (max-width: 320px) {
+  .main-padding {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  /* home media css */
+  .header-logo {
+    width: 100%;
+    max-width: 158px;
+  }
+
+  .banner-content h2 {
+    font-size: 20px;
+    line-height: 31px;
+    margin-bottom: 21px;
+  }
+
+  .about {
+    padding-top: 13px;
+    padding-bottom: 0px;
+  }
+
+  .about-card {
+    padding: 21px 18px 0px 20px;
+    min-height: 424px;
+    margin-bottom: 13px;
+    max-width: 487px;
+  }
+
+  .portfolio-images {
+    min-height: 92px;
+  }
+
+  .swiper-button-next {
+    top: 76%;
+    z-index: 12;
+    right: 24%;
+  }
+
+  .swiper-button-prev {
+    top: 77%;
+    z-index: 12;
+    left: 31%;
+  }
+
+  .technologies-head h2 {
+    font-size: 28px;
+    line-height: 45px;
+    margin-top: 5px;
+  }
+
+  .technologies-isotops-buttons {
+    max-width: 355px;
+    padding: 9px 0px 9px 4px;
+    margin-right: 0px;
+  }
+
+  .technologies-isotops-buttons ul li {
+    margin-bottom: 0px;
+    margin-right: 21px;
+  }
+
+  .technologies-tab-wrapper {
+    margin-right: 13px;
+    max-width: 52px;
+  }
+
+  .chose-us-card {
+    padding: 21px 16px 0px 20px !important;
+    min-height: 413px !important;
+  }
+
+  .chose-us-card h2 {
+    font-size: 17px;
+  }
+
+  .choose-us-image img {
+    height: 299px;
+  }
+
+  .testimonials-body::before {
+    display: none;
+  }
+
+  .testimonials-body::after {
+    display: none;
+  }
+
+  .testimonials-body {
+    padding: 18px 0px 16px 0px;
+    margin-bottom: 47px;
+    max-width: 753px;
+  }
+
+  .testimonials {
+    padding-bottom: 0px;
+  }
+
+  .carousel-control-next {
+    left: 60%;
+  }
+
+  .carousel-control-prev {
+    left: 25%;
+  }
+
+  /* home media css end*/
+}
